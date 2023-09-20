@@ -6,7 +6,7 @@ import logging
 import fastavro
 from utils.tools import GeneralTools
 from methods.extractors.webPageDataScrapers import WebPageDataScrapers
-from sqlalchemy import create_engine
+#from sqlalchemy import create_engine
 generalTools = GeneralTools()
 webPageDataScrapers = WebPageDataScrapers()
 #data = time.strftime("%Y-%m-%d %H:%M:%S")
@@ -28,10 +28,10 @@ class TransformData:
         df.to_parquet(file_name, index=False)
         return df.to_parquet()
     
-    def df_to_sql(self, df: pd.DataFrame, db_url, table_name):
-        engine = create_engine(db_url)
-        df.to_sql(table_name, engine, if_exists='replace', index=False)
-        return df.to_sql()
+    #def df_to_sql(self, df: pd.DataFrame, db_url, table_name):
+    #    engine = create_engine(db_url)
+    #    df.to_sql(table_name, engine, if_exists='replace', index=False)
+    #    return df.to_sql()
     
     def df_to_pickle(self, df: pd.DataFrame, file_name: str):
         df.to_pickle(file_name)

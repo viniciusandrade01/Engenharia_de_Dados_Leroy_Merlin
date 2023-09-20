@@ -1,6 +1,15 @@
 import requests as rq
 import os
 import zipfile
+import utils.logger_config as logger_config
+import logging
+import locale
+from utils.tools import GeneralTools
+
+generalTools = GeneralTools()
+jsonData = generalTools.openJson()
+locale.setlocale(locale.LC_ALL, 'pt_BR.utf8')
+logger_config.setup_logger(generalTools.getDate())
 
 class DriverChrome:
     def __init__(self):

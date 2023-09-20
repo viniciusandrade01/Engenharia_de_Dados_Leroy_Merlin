@@ -2,7 +2,7 @@
 - A LEROY MERLIN chegou no Brasil em 1998 e desde então vem inovando o mundo de materiais de construção. Além de cimentos, tijolos, acabamentos, decorações, e eletrodomésticos, a LEROY MERLIN ainda oferece diversos serviços para você.
 Fonte: Leroy Merlin (Aba 'sobre')
 
-- OBS.: ESSE PROJETO NÃO É UMA RECOMENDAÇÃO DE COMPRA, MAS UMA INICIATIVA DE FORNECER ALGUMAS INFORMAÇÕES E DADOS ÚTEIS - E PÚBLICOS - AOS INTERESSADOS.
+- OBS.: ESSE PROJETO NÃO É UMA RECOMENDAÇÃO DE COMPRA, MAS UMA INICIATIVA DE FORNECER ALGUMAS INFORMAÇÕES E DADOS ÚTEIS - E DISPONÍVEIS PELA PRÓPRIA COMPANHIA - AOS INTERESSADOS.
 
 ---------------------------------------------------------------------------------------------
 # PROJETO

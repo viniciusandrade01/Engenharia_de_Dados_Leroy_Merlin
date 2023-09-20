@@ -1,7 +1,7 @@
 import fastavro
 import datetime
 import os
-import time
+#import time
 import pandas as pd
 import utils.logger_config as logger_config
 from utils.tools import GeneralTools
@@ -9,7 +9,7 @@ from methods.transformers.transformData import TransformData
 import logging
 generalTools = GeneralTools()
 transformData = TransformData()
-logger_config.setup_logger(time.strftime("%Y-%m-%d %H:%M:%S"))
+logger_config.setup_logger(generalTools.getDate())
 
 class FileSavers:
     def __init__(self):

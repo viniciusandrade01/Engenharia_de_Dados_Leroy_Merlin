@@ -1,6 +1,6 @@
 import json
 import os
-import time
+import datetime
 import logging
 
 class GeneralTools:
@@ -17,7 +17,10 @@ class GeneralTools:
     def makeDirectory(self, directory: str):
         if not os.path.exists(directory):
             os.makedirs(directory)
-            
+
+    def getDate(self):
+        return datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    
     def openJson(self):
         with open('utils\data.json') as json_file:
             return json.load(json_file)
