@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import requests as rq
 import time
@@ -5,6 +6,7 @@ from methods.loaders.filesSave import FileSavers
 from methods.transformers.transformData import TransformData
 from methods.extractors.webPageDataScrapers import WebPageDataScrapers
 from utils.tools import GeneralTools
+from utils.driver import DriverChrome
 import utils.logger_config as logger_config
 from utils.aws import AboutAWS
 import logging
@@ -15,12 +17,23 @@ def main():
         transformData = TransformData()
         webPageDataScrapers = WebPageDataScrapers()
         generalTools = GeneralTools()
+        driverChrome = DriverChrome()
         df = pd.DataFrame()
         client = AboutAWS()
         # Variável contendo informações das moedas a serem coletadas, aws e banco de dados
         jsonData = generalTools.openJson()
         logger_config.setup_logger(time.strftime("%Y-%m-%d %H:%M:%S"))
-            
+
+        # Pegando última versão webdriver    
+        latest_chrome_version = driverChrome.getLatestChromeVersion()
+
+        generalTools.makeDirectory('chromeDriver')
+        download_directory = os.path.join(os.path.abspath(os.path.dirname(__file__)),'chromeDriver')
+        
+        # Baixa o ChromeDriver com base na versão mais recente do Chrome
+        driverChrome.downloadChromeDriver(latest_chrome_version, download_directory) 
+
+        # ---------------------------------------------------------- CONTINUAR LÓGICA
         html, soup, dataref, nome_zip, link_zip, xlsx, data_capt, name_directory = webPageDataScrapers.requestGetDefault(jsonData['source'], jsonData['source']['generalLink']['params'])
         logging.info(f"SALVANDO ARQUIVO XLSX, DO ZIP, REFERENTE AOS RELATÓRIOS MENSAIS DEDÍVIDA.")
 
