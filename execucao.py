@@ -46,13 +46,25 @@ def main():
             ok = generalTools.increase()
             path = f'/html/body/div[8]/div[1]/div[1]/section/div/div/div[1]/div/div[{ok}]/div/div/a'
             links = [elemento.get_attribute('href') for elemento in driver.find_elements(by='xpath', value=path)]
-            check = generalTools.checkValue(links)
-            if check != 'CONTINUAR':
+            #check = generalTools.checkValue(links)
+            if generalTools.checkValue(links) == 'ENCERRAR':
                 continue
             auxhtml, auxsoup = webPageDataScrapers.requestGetDefault(links[0])
+            #webPageDataScrapers.downloadUrl(auxhtml, f"jsonData['source']['generalLink']['params']['namehtml']{auxhtml.url.split("/")[-1].replace("-","")}", name_directory)
             driver.get(links[0])
             page = driver.find_elements(by='xpath', value='/html/body/div[7]/div[4]/div[1]/div/div[3]/div/div')[0].text
             page = page.split("EXCLUSIVO SITE\n")
+            Resume = {
+                1: fileSavers.saveValuesSizeOne,
+                4: fileSavers.saveValuesSizeFour,
+                5: fileSavers.saveValuesSizeFive,
+                6: fileSavers.saveValuesSizeSix,
+                8: fileSavers.saveValuesSizeEight,
+                9: fileSavers.saveValuesSizeNine
+            }
+            for size, item in [(len(sublista), sublista) for sublista in [parte.split("\n") for parte in page]]:
+                Resume[size](item)
+
             #[parte.split("\n") for parte in driver.find_elements(by='xpath', value='/html/body/div[7]/div[4]/div[1]/div/div[3]/div/div')[0].text.split("EXCLUSIVO SITE\n")]
             #[len(parte.split("\n")) for parte in driver.find_elements(by='xpath', value='/html/body/div[7]/div[4]/div[1]/div/div[3]/div/div')[0].text.split("EXCLUSIVO SITE\n")]
             #set([len(parte.split("\n")) for parte in driver.find_elements(by='xpath', value='/html/body/div[7]/div[4]/div[1]/div/div[3]/div/div')[0].text.split("EXCLUSIVO SITE\n")])

@@ -60,3 +60,7 @@ class WebPageDataScrapers:
         
         #return html, soup, dataref, nome_zip, link_zip, self.xlsx[0], data_capt, name_directory
         return html, soup
+    
+    def getPage(self, xpath: str):
+        
+        return 'ok'

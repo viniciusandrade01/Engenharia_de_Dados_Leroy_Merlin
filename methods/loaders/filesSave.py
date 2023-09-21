@@ -13,7 +13,30 @@ logger_config.setup_logger(generalTools.getDate())
 
 class FileSavers:
     def __init__(self):
+        self.df = pd.DataFrame(columns=['Produto', 'Codigo', 'Avaliacao', 'Valor_A_Vista', 'Valor_A_Prazo'])
+
+    def saveValuesSizeOne(self, data: list):
         pass
+
+    def saveValuesSizeFour(self, data: list):
+        #pd.DataFrame([itens], columns=[['Itens', 'Itenx', 'Iten']])
+        return 'ok'
+    
+    def saveValuesSizeFive(self, data: list):
+        return 'ok'
+    
+    def saveValuesSizeSix(self, data: list):
+        
+        return 'ok'
+    
+    def saveValuesSizeSeven(self, data: list):
+        return 'ok'
+    
+    def saveValuesSizeEight(self, data: list):
+        return 'ok'
+    
+    def saveValuesSizeNine(self, data: list):
+        return 'ok'
 
     def openingSheets(self, directory: str, sheet: str, rows: int, footer: int):
         return pd.read_excel(f"{directory}", sheet_name=f"{sheet}", skiprows=rows, skipfooter=footer)
