@@ -22,3 +22,13 @@ class GeneralSelenium:
 
     def ClosingSelenium(self):
         return webdriver.Chrome()
+    
+    def clickOnElementByXPath(self, driver, xpath, time: int):
+        try:
+            elemento = WebDriverWait(driver, time).until(
+                EC.presence_of_element_located((By.XPATH, xpath))
+            )
+            elemento.click()
+        except Exception as e:
+            print(f"Erro ao clicar no elemento com XPath: {xpath}")
+            print(str(e))

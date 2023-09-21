@@ -5,7 +5,7 @@ import logging
 
 class GeneralTools:
     def __init__(self):
-        pass
+        self.contador = 0
 
     def validateDate(self, data: str, data_param: dict):
         try:
@@ -63,3 +63,10 @@ class GeneralTools:
     
     def lowerCase(self, dado: str):
         return dado.lower()
+
+    def increase(self):
+        self.contador += 1
+        return self.contador
+    
+    def checkValue(self, data):
+        return 'CONTINUAR' if len(data) != 0 else 'ENCERRAR'

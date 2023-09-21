@@ -3,7 +3,7 @@ import boto3
 import zipfile
 import os
 import requests as rq
-import uuid
+#import uuid
 from bs4 import BeautifulSoup as bs4
 #import time
 import utils.logger_config as logger_config

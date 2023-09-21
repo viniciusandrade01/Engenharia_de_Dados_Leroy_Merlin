@@ -40,10 +40,24 @@ def main():
         html, soup = webPageDataScrapers.requestGetDefault(jsonData['source']['generalLink']['url'])
         webPageDataScrapers.downloadUrl(html, jsonData['source']['generalLink']['params']['namehtml'], name_directory)
         
+        driver = selenium.startSelenium()
         for produtos in range(25):
-            driver = selenium.startSelenium()
             driver.get(soup.find_all('a', class_='nav-link')[produtos].attrs['href'])
-            driver.find_elements(by='xpath', value='/html/body/div[8]/div[1]/div[1]/section/div/div/div[1]/div/div[1]/div/div/a')
+            ok = generalTools.increase()
+            path = f'/html/body/div[8]/div[1]/div[1]/section/div/div/div[1]/div/div[{ok}]/div/div/a'
+            links = [elemento.get_attribute('href') for elemento in driver.find_elements(by='xpath', value=path)]
+            check = generalTools.checkValue(links)
+            if check != 'CONTINUAR':
+                continue
+            auxhtml, auxsoup = webPageDataScrapers.requestGetDefault(links[0])
+            driver.get(links[0])
+            page = driver.find_elements(by='xpath', value='/html/body/div[7]/div[4]/div[1]/div/div[3]/div/div')[0].text
+            page = page.split("EXCLUSIVO SITE\n")
+            #[parte.split("\n") for parte in driver.find_elements(by='xpath', value='/html/body/div[7]/div[4]/div[1]/div/div[3]/div/div')[0].text.split("EXCLUSIVO SITE\n")]
+            #[len(parte.split("\n")) for parte in driver.find_elements(by='xpath', value='/html/body/div[7]/div[4]/div[1]/div/div[3]/div/div')[0].text.split("EXCLUSIVO SITE\n")]
+            #set([len(parte.split("\n")) for parte in driver.find_elements(by='xpath', value='/html/body/div[7]/div[4]/div[1]/div/div[3]/div/div')[0].text.split("EXCLUSIVO SITE\n")])
+            _=1
+
 
             # ---------------------------------------------------------- CONTINUAR LÓGICA
             
