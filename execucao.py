@@ -40,21 +40,27 @@ def main():
         html, soup = webPageDataScrapers.requestGetDefault(jsonData['source']['generalLink']['url'])
         webPageDataScrapers.downloadUrl(html, jsonData['source']['generalLink']['params']['namehtml'], name_directory)
         
+        # TESTE
+
         driver = selenium.startSelenium()
         for produtos in range(25):
             driver.get(soup.find_all('a', class_='nav-link')[produtos].attrs['href'])
+            if 'climatizacao' in driver.current_url.split("/")[-1]:
+                continue
             #ok = generalTools.increase()
+            #for produtodept in range(30):
             path = f'/html/body/div[9]/div[1]/div[1]/section/div/div/div[1]/div/div[{generalTools.increase()}]/div/div/a'
             driver.implicitly_wait(10)
             links = [elemento.get_attribute('href') for elemento in driver.find_elements(by='xpath', value=path)]
             #check = generalTools.checkValue(links)
             if generalTools.checkValue(links) == 'ENCERRAR':
                 continue
-            auxhtml, auxsoup = webPageDataScrapers.requestGetDefault(links[0])
+            #auxhtml, auxsoup = webPageDataScrapers.requestGetDefault(links[0])
             #webPageDataScrapers.downloadUrl(auxhtml, f"jsonData['source']['generalLink']['params']['namehtml']{auxhtml.url.split("/")[-1].replace("-","")}", name_directory)
             driver.get(links[0])
             page = driver.find_elements(by='xpath', value='/html/body/div[8]/div[4]/div[1]/div/div[3]/div/div')[0].text
-            page = page.split("EXCLUSIVO SITE\n")
+            page = page.split("EXCLUSIVO SITE\n") if produtos != 0 else page.split("s\n")
+
             Resume = {
                 1: fileSavers.saveValuesSizeOne,
                 4: fileSavers.saveValuesSizeFour,
@@ -64,44 +70,34 @@ def main():
                 9: fileSavers.saveValuesSizeNine,
                 10: fileSavers.saveValuesSizeTen
             }
-            for size, item in [(len(sublista), sublista) for sublista in [parte.split("\n") for parte in page]]:
+            #for changePage in range(10):
+            i = 0
+            for size, item in [(len(sublista), sublista) for sublista in [parte.split("\n")for parte in page]]:
+                i = i + 1
+                item = transformData.cleaningEmptySpace(item, links[0].split(".br/")[-1]) if len(item) != 1 else item
                 #[item[i:i+3] for i in range(0, len(item), 3)]
                 # Fazer um dicionáro para fazer um DE/PARA, com os links enviados
-                Resume[size](item, links[0].split(".br/")[-1])
-
-            #[parte.split("\n") for parte in driver.find_elements(by='xpath', value='/html/body/div[7]/div[4]/div[1]/div/div[3]/div/div')[0].text.split("EXCLUSIVO SITE\n")]
-            #[len(parte.split("\n")) for parte in driver.find_elements(by='xpath', value='/html/body/div[7]/div[4]/div[1]/div/div[3]/div/div')[0].text.split("EXCLUSIVO SITE\n")]
-            #set([len(parte.split("\n")) for parte in driver.find_elements(by='xpath', value='/html/body/div[7]/div[4]/div[1]/div/div[3]/div/div')[0].text.split("EXCLUSIVO SITE\n")])
+                #Resume[size](item, links[0].split(".br/")[-1])
+                if i == 35:
+                    print('ok')
+                Resume[len(item)](item, links[0].split(".br/")[-1])
             _=1
 
-
-            # ---------------------------------------------------------- CONTINUAR LÓGICA
-            
-            #selenium.testEightComponents(soup.find_all('a', class_='nav-link')[produtos].attrs['href'])
-            #selenium = GeneralSelenium(driver_path, base_url)
-            _=1
-            #selenium = generalSelenium.start('chromeDriver\chromedriver.exe', soup.find_all('a', class_='nav-link')[produtos].attrs['href'])
-
-            
-            #html, soup = webPageDataScrapers.requestGetDefault(soup.find_all('a', class_='nav-link')[produtos].attrs['href'])
-            webPageDataScrapers.downloadUrl(html, jsonData['source']['generalLink']['params']['namehtml'], name_directory)
-            webPageDataScrapers.extractInfoUrl()
-        
-        #dataref, nome_zip, link_zip, data_capt = self.extractInfoUrl(soup, data_param)
-
-
+            #webPageDataScrapers.downloadUrl(html, jsonData['source']['generalLink']['params']['namehtml'], name_directory)
+            #webPageDataScrapers.extractInfoUrl()
+            continue
 
         # ---------------------------------------------------------- CONTINUANDO LÓGICA
-        logging.info(f"SALVANDO ARQUIVO XLSX, DO ZIP, REFERENTE AOS RELATÓRIOS MENSAIS DEDÍVIDA.")
+        #logging.info(f"SALVANDO ARQUIVO XLSX, DO ZIP, REFERENTE AOS RELATÓRIOS MENSAIS DEDÍVIDA.")
         #df = fileSavers.openingSheets(f"{name_directory}/{name_file}", '2.2', 6, 6)
 
         #df = transformData.deletingColumns(df, data_capt)
 
-        df = transformData.selectingData(df, 'Título', jsonData['source']['generalLink']['rmd22'])
+        #df = transformData.selectingData(df, 'Título', jsonData['source']['generalLink']['rmd22'])
             
         #fileName, file_type = fileSavers.creatingFinalDataFrame(df, dataref, f'R_Mensal_Divida_{generalTools.hyphenToNull(data_capt)}', '\t', name_directory, data_capt, generalTools.lowerCase(jsonData['source']['generalLink']['filetype']))
-        logging.info(f"DOCUMENTO CRIADO COM SUCESSO!")
-        s3 = client.createClient('s3')
+        #logging.info(f"DOCUMENTO CRIADO COM SUCESSO!")
+        #s3 = client.createClient('s3')
         #localfile = f"{name_directory}/{fileName}.{file_type}"
         #client.uploadFile(s3, localfile, 'engdadostest', localfile)
         
