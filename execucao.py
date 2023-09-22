@@ -43,8 +43,9 @@ def main():
         driver = selenium.startSelenium()
         for produtos in range(25):
             driver.get(soup.find_all('a', class_='nav-link')[produtos].attrs['href'])
-            ok = generalTools.increase()
-            path = f'/html/body/div[8]/div[1]/div[1]/section/div/div/div[1]/div/div[{ok}]/div/div/a'
+            #ok = generalTools.increase()
+            path = f'/html/body/div[9]/div[1]/div[1]/section/div/div/div[1]/div/div[{generalTools.increase()}]/div/div/a'
+            driver.implicitly_wait(10)
             links = [elemento.get_attribute('href') for elemento in driver.find_elements(by='xpath', value=path)]
             #check = generalTools.checkValue(links)
             if generalTools.checkValue(links) == 'ENCERRAR':
@@ -52,7 +53,7 @@ def main():
             auxhtml, auxsoup = webPageDataScrapers.requestGetDefault(links[0])
             #webPageDataScrapers.downloadUrl(auxhtml, f"jsonData['source']['generalLink']['params']['namehtml']{auxhtml.url.split("/")[-1].replace("-","")}", name_directory)
             driver.get(links[0])
-            page = driver.find_elements(by='xpath', value='/html/body/div[7]/div[4]/div[1]/div/div[3]/div/div')[0].text
+            page = driver.find_elements(by='xpath', value='/html/body/div[8]/div[4]/div[1]/div/div[3]/div/div')[0].text
             page = page.split("EXCLUSIVO SITE\n")
             Resume = {
                 1: fileSavers.saveValuesSizeOne,
@@ -60,10 +61,13 @@ def main():
                 5: fileSavers.saveValuesSizeFive,
                 6: fileSavers.saveValuesSizeSix,
                 8: fileSavers.saveValuesSizeEight,
-                9: fileSavers.saveValuesSizeNine
+                9: fileSavers.saveValuesSizeNine,
+                10: fileSavers.saveValuesSizeTen
             }
             for size, item in [(len(sublista), sublista) for sublista in [parte.split("\n") for parte in page]]:
-                Resume[size](item)
+                #[item[i:i+3] for i in range(0, len(item), 3)]
+                # Fazer um dicionáro para fazer um DE/PARA, com os links enviados
+                Resume[size](item, links[0].split(".br/")[-1])
 
             #[parte.split("\n") for parte in driver.find_elements(by='xpath', value='/html/body/div[7]/div[4]/div[1]/div/div[3]/div/div')[0].text.split("EXCLUSIVO SITE\n")]
             #[len(parte.split("\n")) for parte in driver.find_elements(by='xpath', value='/html/body/div[7]/div[4]/div[1]/div/div[3]/div/div')[0].text.split("EXCLUSIVO SITE\n")]

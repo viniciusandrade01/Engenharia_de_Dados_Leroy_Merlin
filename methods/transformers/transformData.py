@@ -55,6 +55,9 @@ class TransformData:
         except:
             return ""
 
+    def cleaningEmptySpace(self, data: list, product):
+        return list(filter(lambda item: item != '', data)) + [product]
+
     def deletingColumns(self, df: pd.DataFrame, diames: str):
         #arg = str(datetime.datetime.strptime(diames, "%B de %Y").strftime("%b/%y")).title()
         arg = str(datetime.datetime.strptime(diames, "%Y-%m-%d").strftime("%b/%y")).title()

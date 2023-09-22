@@ -13,30 +13,38 @@ logger_config.setup_logger(generalTools.getDate())
 
 class FileSavers:
     def __init__(self):
-        self.df = pd.DataFrame(columns=['Produto', 'Codigo', 'Avaliacao', 'Valor_A_Vista', 'Valor_A_Prazo'])
+        self.df = pd.DataFrame(columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Preco_A_Vista', 'Preço_A_Credito', 'Parcela', 'Valor_Parcela', 'Produto'])
 
-    def saveValuesSizeOne(self, data: list):
+    def saveValuesSizeOne(self, data: list, product: str):
         pass
 
-    def saveValuesSizeFour(self, data: list):
-        #pd.DataFrame([itens], columns=[['Itens', 'Itenx', 'Iten']])
-        return 'ok'
+    def saveValuesSizeFour(self, data: list, product: str):
+        data = transformData.cleaningEmptySpace(data, product)
+        self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Preco_Original', 'Parcela', 'Valor_Parcela', 'Produto'])], ignore_index=True)
     
-    def saveValuesSizeFive(self, data: list):
-        return 'ok'
+    def saveValuesSizeFive(self, data: list, product: str):
+        data = transformData.cleaningEmptySpace(data, product)
+        self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Preco_Original', 'Desmembrar', 'Produto'])], ignore_index=True)
     
-    def saveValuesSizeSix(self, data: list):
-        
-        return 'ok'
+    def saveValuesSizeSix(self, data: list, product: str):
+        data = transformData.cleaningEmptySpace(data, product)
+        self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Preco_Original', 'Parcela', 'Valor_Parcela', 'Produto'])], ignore_index=True)
     
-    def saveValuesSizeSeven(self, data: list):
-        return 'ok'
+    def saveValuesSizeSeven(self, data: list, product: str):
+        data = transformData.cleaningEmptySpace(data, product)
+        self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Preco_Original', 'Parcela', 'Valor_Parcela', 'Produto'])], ignore_index=True)
     
-    def saveValuesSizeEight(self, data: list):
-        return 'ok'
+    def saveValuesSizeEight(self, data: list, product: str):
+        data = transformData.cleaningEmptySpace(data, product)
+        self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Preco_A_Vista', 'Desmembrar', 'Produto'])], ignore_index=True)
     
-    def saveValuesSizeNine(self, data: list):
-        return 'ok'
+    def saveValuesSizeNine(self, data: list, product: str):
+        data = transformData.cleaningEmptySpace(data, product)
+        self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Preco_A_Vista', 'Parcela', 'Desmembrar', 'Produto'])], ignore_index=True)
+
+    def saveValuesSizeTen(self, data: list, product: str):
+        data = transformData.cleaningEmptySpace(data, product)
+        self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Preco_A_Vista', 'Parcela', 'Desmembrar', 'Produto'])], ignore_index=True)
 
     def openingSheets(self, directory: str, sheet: str, rows: int, footer: int):
         return pd.read_excel(f"{directory}", sheet_name=f"{sheet}", skiprows=rows, skipfooter=footer)
