@@ -40,62 +40,60 @@ def main():
         html, soup = webPageDataScrapers.requestGetDefault(jsonData['source']['generalLink']['url'])
         webPageDataScrapers.downloadUrl(html, jsonData['source']['generalLink']['params']['namehtml'], name_directory)
         
-        # TESTE
+        Resume = {
+                    1: fileSavers.saveValuesSizeOne,
+                    4: fileSavers.saveValuesSizeFour,
+                    5: fileSavers.saveValuesSizeFive,
+                    6: fileSavers.saveValuesSizeSix,
+                    8: fileSavers.saveValuesSizeEight,
+                    9: fileSavers.saveValuesSizeNine,
+                    10: fileSavers.saveValuesSizeTen
+        }
 
         driver = selenium.startSelenium()
-        for produtos in range(25):
-            driver.get(soup.find_all('a', class_='nav-link')[produtos].attrs['href'])
-            if 'climatizacao' in driver.current_url.split("/")[-1]:
+        for dept in range(25):
+            departamento = soup.find_all('a', class_='nav-link')[dept].attrs['href']
+            driver.get(departamento)
+            if 'climatizacao' in departamento.split("/")[-1]:
                 continue
             #ok = generalTools.increase()
             #for produtodept in range(30):
-            path = f'/html/body/div[9]/div[1]/div[1]/section/div/div/div[1]/div/div[{generalTools.increase()}]/div/div/a'
+            #path = f'/html/body/div[9]/div[1]/div[1]/section/div/div/div[1]/div/div[{generalTools.increase()}]/div/div/a'
             driver.implicitly_wait(10)
-            links = [elemento.get_attribute('href') for elemento in driver.find_elements(by='xpath', value=path)]
-            #check = generalTools.checkValue(links)
-            if generalTools.checkValue(links) == 'ENCERRAR':
-                continue
-            #auxhtml, auxsoup = webPageDataScrapers.requestGetDefault(links[0])
-            #webPageDataScrapers.downloadUrl(auxhtml, f"jsonData['source']['generalLink']['params']['namehtml']{auxhtml.url.split("/")[-1].replace("-","")}", name_directory)
-            driver.get(links[0])
-            page = driver.find_elements(by='xpath', value='/html/body/div[8]/div[4]/div[1]/div/div[3]/div/div')[0].text
-            page = page.split("EXCLUSIVO SITE\n") if produtos != 0 else page.split("s\n")
+            #links = [elemento.get_attribute('href') for elemento in driver.find_elements(by='xpath', value=path)]
+            checagem = True
+            ind = 1
+            while checagem:
+                driver.get(departamento)
+                conteudo = driver.find_elements(by='xpath', value=f"/html/body/div[9]/div[1]/div[1]/section/div/div/div[1]/div/div[{generalTools.increase()}]/div/div/a")
+                links = [elemento.get_attribute('href') for elemento in conteudo]
+                if generalTools.checkValue(links) == 'ENCERRAR':
+                    continue
+                checagem2 = True
+                while checagem2:
+                    driver.get(links[0]) if ind == 1 else driver.get(f"{links[0]}?page={ind}")
+                    page = driver.find_elements(by='xpath', value='/html/body/div[8]/div[4]/div[1]/div/div[3]/div/div')[0].text
+                    if generalTools.checkEmptyValue(page) == 'NEXT':
+                        checagem2 = False
+                        ind = 0
+                    page = page.split("EXCLUSIVO SITE\n") if dept != 0 else page.split("s\n")
 
-            Resume = {
-                1: fileSavers.saveValuesSizeOne,
-                4: fileSavers.saveValuesSizeFour,
-                5: fileSavers.saveValuesSizeFive,
-                6: fileSavers.saveValuesSizeSix,
-                8: fileSavers.saveValuesSizeEight,
-                9: fileSavers.saveValuesSizeNine,
-                10: fileSavers.saveValuesSizeTen
-            }
-            #for changePage in range(10):
-            i = 0
-            for size, item in [(len(sublista), sublista) for sublista in [parte.split("\n")for parte in page]]:
-                i = i + 1
-                item = transformData.cleaningEmptySpace(item, links[0].split(".br/")[-1]) if len(item) != 1 else item
-                #[item[i:i+3] for i in range(0, len(item), 3)]
-                # Fazer um dicionáro para fazer um DE/PARA, com os links enviados
-                #Resume[size](item, links[0].split(".br/")[-1])
-                if i == 35:
-                    print('ok')
-                Resume[len(item)](item, links[0].split(".br/")[-1])
-            _=1
+                    for size, item in [(len(sublista), sublista) for sublista in [parte.split("\n")for parte in page]]:
+                        item = transformData.cleaningEmptySpace(item, links[0].split(".br/")[-1]) if len(item) != 1 else item
+                        #[item[i:i+3] for i in range(0, len(item), 3)]
+                        # Fazer um dicionáro para fazer um DE/PARA, com os links enviados
+                        #Resume[size](item, links[0].split(".br/")[-1])
+                        Resume[len(item)](item, links[0].split(".br/")[-1])
+                    if generalTools.checkValueWithComparation(item, page[-1]) == 'NEXT':
+                        ind = ind + 1
+
 
             #webPageDataScrapers.downloadUrl(html, jsonData['source']['generalLink']['params']['namehtml'], name_directory)
             #webPageDataScrapers.extractInfoUrl()
-            continue
+                    #continue
 
         # ---------------------------------------------------------- CONTINUANDO LÓGICA
-        #logging.info(f"SALVANDO ARQUIVO XLSX, DO ZIP, REFERENTE AOS RELATÓRIOS MENSAIS DEDÍVIDA.")
-        #df = fileSavers.openingSheets(f"{name_directory}/{name_file}", '2.2', 6, 6)
-
-        #df = transformData.deletingColumns(df, data_capt)
-
-        #df = transformData.selectingData(df, 'Título', jsonData['source']['generalLink']['rmd22'])
-            
-        #fileName, file_type = fileSavers.creatingFinalDataFrame(df, dataref, f'R_Mensal_Divida_{generalTools.hyphenToNull(data_capt)}', '\t', name_directory, data_capt, generalTools.lowerCase(jsonData['source']['generalLink']['filetype']))
+        
         #logging.info(f"DOCUMENTO CRIADO COM SUCESSO!")
         #s3 = client.createClient('s3')
         #localfile = f"{name_directory}/{fileName}.{file_type}"

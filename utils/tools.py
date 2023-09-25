@@ -70,3 +70,9 @@ class GeneralTools:
     
     def checkValue(self, data):
         return 'CONTINUAR' if len(data) != 0 else 'ENCERRAR'
+
+    def checkValueWithComparation(self, data, page):
+        return 'NEXT' if page.split("\n")[0] == data[0] else 'CONTINUAR'
+    
+    def checkEmptyValue(self, page):
+        return 'NEXT' if page == '' else 'CONTINUAR'
