@@ -54,7 +54,7 @@ def main():
         for dept in range(25):
             departamento = soup.find_all('a', class_='nav-link')[dept].attrs['href']
             driver.get(departamento)
-            if 'climatizacao' in departamento.split("/")[-1]:
+            if 'climatizacao' in departamento.split("/")[-1] or 'cama' in departamento.split("/")[-1]:
                 continue
             #ok = generalTools.increase()
             #for produtodept in range(30):
@@ -67,31 +67,33 @@ def main():
                 driver.get(departamento)
                 conteudo = driver.find_elements(by='xpath', value=f"/html/body/div[9]/div[1]/div[1]/section/div/div/div[1]/div/div[{generalTools.increase()}]/div/div/a")
                 links = [elemento.get_attribute('href') for elemento in conteudo]
+                
                 if generalTools.checkValue(links) == 'ENCERRAR':
                     continue
                 checagem2 = True
                 while checagem2:
                     driver.get(links[0]) if ind == 1 else driver.get(f"{links[0]}?page={ind}")
+                    if 'caixas' in driver.current_url or driver.current_url == 'https://www.leroymerlin.com.br/acessorios-para-informatica-computadores?page=2':
+                        checagem2 = False
                     page = driver.find_elements(by='xpath', value='/html/body/div[8]/div[4]/div[1]/div/div[3]/div/div')[0].text
                     if generalTools.checkEmptyValue(page) == 'NEXT':
                         checagem2 = False
                         ind = 0
                     page = page.split("EXCLUSIVO SITE\n") if dept != 0 else page.split("s\n")
-
+                    i = 0
                     for size, item in [(len(sublista), sublista) for sublista in [parte.split("\n")for parte in page]]:
                         item = transformData.cleaningEmptySpace(item, links[0].split(".br/")[-1]) if len(item) != 1 else item
                         #[item[i:i+3] for i in range(0, len(item), 3)]
                         # Fazer um dicionáro para fazer um DE/PARA, com os links enviados
                         #Resume[size](item, links[0].split(".br/")[-1])
+                        print(i)
+                        #if i == 24:
+                        #    print('ok')
                         Resume[len(item)](item, links[0].split(".br/")[-1])
+                        i = i + 1
                     if generalTools.checkValueWithComparation(item, page[-1]) == 'NEXT':
                         ind = ind + 1
-
-
-            #webPageDataScrapers.downloadUrl(html, jsonData['source']['generalLink']['params']['namehtml'], name_directory)
-            #webPageDataScrapers.extractInfoUrl()
-                    #continue
-
+                        
         # ---------------------------------------------------------- CONTINUANDO LÓGICA
         
         #logging.info(f"DOCUMENTO CRIADO COM SUCESSO!")
