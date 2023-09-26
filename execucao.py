@@ -73,12 +73,19 @@ def main():
                 checagem2 = True
                 while checagem2:
                     driver.get(links[0]) if ind == 1 else driver.get(f"{links[0]}?page={ind}")
-                    if 'caixas' in driver.current_url or driver.current_url == 'https://www.leroymerlin.com.br/acessorios-para-informatica-computadores?page=2':
+                    if 'caixas' in driver.current_url or 'computadores' in driver.current_url or 'projetores' in driver.current_url or 'ring-light' in driver.current_url or 'drones' in driver.current_url or 'cftv' in driver.current_url or 'informatica' in driver.current_url:
                         checagem2 = False
-                    page = driver.find_elements(by='xpath', value='/html/body/div[8]/div[4]/div[1]/div/div[3]/div/div')[0].text
-                    if generalTools.checkEmptyValue(page) == 'NEXT':
+                        continue
+                    page = driver.find_elements(by='xpath', value='/html/body/div[8]/div[4]/div[1]/div/div[3]/div/div')
+                    #if generalTools.checkValue(page) == 'ENCERRAR':
+                    #    checagem2 = False
+                    #    ind = 1
+                    #    continue
+                    page = page[0].text
+                    if generalTools.checkEmptyValue(page) == 'NEXT' or generalTools.checkValue(page) == 'ENCERRAR':
                         checagem2 = False
-                        ind = 0
+                        ind = 1
+                        continue
                     page = page.split("EXCLUSIVO SITE\n") if dept != 0 else page.split("s\n")
                     i = 0
                     for size, item in [(len(sublista), sublista) for sublista in [parte.split("\n")for parte in page]]:
