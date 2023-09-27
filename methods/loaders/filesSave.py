@@ -13,38 +13,56 @@ logger_config.setup_logger(generalTools.getDate())
 
 class FileSavers:
     def __init__(self):
-        self.df = pd.DataFrame(columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Preco_A_Vista', 'Preço_A_Credito', 'Parcela', 'Valor_Parcela', 'Produto'])
+        self.df = pd.DataFrame(columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Preco_A_Vista', 'Preço_A_Credito', 'Parcela', 'Valor_Parcela', 'Produto', 'Desconsiderar'])
 
     def saveValuesSizeOne(self, data: list, product: str):
         pass
 
+    def saveValuesSizeTwo(self, data: list, product: str):
+        pass
+
+    def saveValuesSizeThree(self, data: list, product: str):
+        pass
+
     def saveValuesSizeFour(self, data: list, product: str):
-        #data = transformData.cleaningEmptySpace(data, product)
         self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Preco_Original', 'Produto'])], ignore_index=True)
     
     def saveValuesSizeFive(self, data: list, product: str):
-        #data = transformData.cleaningEmptySpace(data, product)
         self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Preco_Original', 'Desmembrar', 'Produto'])], ignore_index=True) if product != 'ar-condicionado' else pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Avaliacao','Preco_Original', 'Desmembrar', 'Produto'])], ignore_index=True)
     
     def saveValuesSizeSix(self, data: list, product: str):
-        #data = transformData.cleaningEmptySpace(data, product)
         self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Preco_Original', 'Parcela', 'Valor_Parcela', 'Produto'])], ignore_index=True)
     
     def saveValuesSizeSeven(self, data: list, product: str):
-        #data = transformData.cleaningEmptySpace(data, product)
-        self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Preco_Original', 'Parcela', 'Valor_Parcela', 'Produto'])], ignore_index=True)
+        data = transformData.cleaningEmptySpace("\n".join(data).split("EXCLUSIVO SITE")[-1].split("\n"), product)
+        self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Produto', 'Desconsiderar'])], ignore_index=True)
     
     def saveValuesSizeEight(self, data: list, product: str):
-        #data = transformData.cleaningEmptySpace(data, product)
         self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Preco_A_Vista', 'Desmembrar', 'Produto'])], ignore_index=True)
     
     def saveValuesSizeNine(self, data: list, product: str):
-        #data = transformData.cleaningEmptySpace(data, product)
         self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Preco_A_Vista', 'Parcela', 'Desmembrar', 'Produto'])], ignore_index=True)
 
     def saveValuesSizeTen(self, data: list, product: str):
-        #data = transformData.cleaningEmptySpace(data, product)
         self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Preco_A_Vista', 'Parcela', 'Desmembrar', 'Produto'])], ignore_index=True)
+    
+    def saveValuesSizeEleven(self, data: list, product: str):
+        pass
+
+    def saveValuesSizeTwelve(self, data: list, product: str):
+        pass
+
+    def saveValuesSizeThirteen(self, data: list, product: str):
+        pass
+
+    def saveValuesSizeFourteen(self, data: list, product: str):
+        pass
+
+    def saveValuesSizeFifteen(self, data: list, product: str):
+        pass
+
+    def saveValuesSizeSixteen(self, data: list, product: str):
+        pass
 
     def openingSheets(self, directory: str, sheet: str, rows: int, footer: int):
         return pd.read_excel(f"{directory}", sheet_name=f"{sheet}", skiprows=rows, skipfooter=footer)

@@ -41,13 +41,15 @@ def main():
         webPageDataScrapers.downloadUrl(html, jsonData['source']['generalLink']['params']['namehtml'], name_directory)
         
         Resume = {
-                    1: fileSavers.saveValuesSizeOne,
-                    4: fileSavers.saveValuesSizeFour,
-                    5: fileSavers.saveValuesSizeFive,
-                    6: fileSavers.saveValuesSizeSix,
-                    8: fileSavers.saveValuesSizeEight,
-                    9: fileSavers.saveValuesSizeNine,
-                    10: fileSavers.saveValuesSizeTen
+                    1: fileSavers.saveValuesSizeOne, 2: fileSavers.saveValuesSizeTwo,
+                    3: fileSavers.saveValuesSizeThree, 4: fileSavers.saveValuesSizeFour,
+                    5: fileSavers.saveValuesSizeFive, 6: fileSavers.saveValuesSizeSix,
+                    7: fileSavers.saveValuesSizeSeven, 8: fileSavers.saveValuesSizeEight,
+                    9: fileSavers.saveValuesSizeNine, 10: fileSavers.saveValuesSizeTen,
+                    11: fileSavers.saveValuesSizeEleven, 12: fileSavers.saveValuesSizeTwelve,
+                    13: fileSavers.saveValuesSizeThirteen,
+                    14: fileSavers.saveValuesSizeFourteen, 
+                    15: fileSavers.saveValuesSizeFifteen, 16: fileSavers.saveValuesSizeSixteen
         }
 
         driver = selenium.startSelenium()
@@ -86,7 +88,8 @@ def main():
                         checagem2 = False
                         ind = 1
                         continue
-                    page = page.split("EXCLUSIVO SITE\n") if dept != 0 else page.split("s\n")
+                    #page = page.split("EXCLUSIVO SITE\n") if dept != 0 else page.split("s\n")
+                    page = page.split("cada\n") if 'fones-de-ouvido' in driver.current_url else page.split("EXCLUSIVO SITE\n") if dept != 0 else page.split("s\n")
                     i = 0
                     for size, item in [(len(sublista), sublista) for sublista in [parte.split("\n")for parte in page]]:
                         item = transformData.cleaningEmptySpace(item, links[0].split(".br/")[-1]) if len(item) != 1 else item
@@ -94,8 +97,8 @@ def main():
                         # Fazer um dicionáro para fazer um DE/PARA, com os links enviados
                         #Resume[size](item, links[0].split(".br/")[-1])
                         print(i)
-                        #if i == 24:
-                        #    print('ok')
+                        #if len(item) >= 12:
+                            #item = "\n".join(item).split("EXCLUSIVO SITE\n")
                         Resume[len(item)](item, links[0].split(".br/")[-1])
                         i = i + 1
                     if generalTools.checkValueWithComparation(item, page[-1]) == 'NEXT':
