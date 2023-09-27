@@ -55,6 +55,11 @@ class TransformData:
         except:
             return ""
 
+    def cleaningDataRepeated(self, data: list):
+        if data[-1] == data[-2]:
+            data.pop()
+        return data
+
     def cleaningEmptySpace(self, data: list, product):
         return list(filter(lambda item: item != '', data)) + [product]
 

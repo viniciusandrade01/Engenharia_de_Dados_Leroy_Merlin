@@ -35,6 +35,7 @@ class FileSavers:
     
     def saveValuesSizeSeven(self, data: list, product: str):
         data = transformData.cleaningEmptySpace("\n".join(data).split("EXCLUSIVO SITE")[-1].split("\n"), product)
+        data = transformData.cleaningDataRepeated(data)
         self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Produto', 'Desconsiderar'])], ignore_index=True)
     
     def saveValuesSizeEight(self, data: list, product: str):
