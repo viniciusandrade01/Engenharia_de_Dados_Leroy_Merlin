@@ -1,7 +1,6 @@
 import os
 import pandas as pd
 import requests as rq
-#import time
 from methods.loaders.filesSave import FileSavers
 from methods.transformers.transformData import TransformData
 from methods.extractors.webPageDataScrapers import WebPageDataScrapers
@@ -58,20 +57,20 @@ def main():
             driver.get(departamento)
             if 'climatizacao' in departamento.split("/")[-1] or 'cama' in departamento.split("/")[-1]:
                 continue
-            #ok = generalTools.increase()
-            #for produtodept in range(30):
-            #path = f'/html/body/div[9]/div[1]/div[1]/section/div/div/div[1]/div/div[{generalTools.increase()}]/div/div/a'
+            
             driver.implicitly_wait(10)
-            #links = [elemento.get_attribute('href') for elemento in driver.find_elements(by='xpath', value=path)]
             checagem = True
             ind = 1
+            aux = 0
             while checagem:
                 driver.get(departamento)
-                conteudo = driver.find_elements(by='xpath', value=f"/html/body/div[9]/div[1]/div[1]/section/div/div/div[1]/div/div[{generalTools.increase()}]/div/div/a")
+                aux = aux + 1
+                conteudo = driver.find_elements(by='xpath', value=f"/html/body/div[9]/div[1]/div[1]/section/div/div/div[1]/div/div[{aux}]/div/div/a")
                 #conteudo = driver.find_elements(by='xpath', value=f"/html/body/div[9]/div[1]/div[1]/section/div/div/div[1]/div/div[{21}]/div/div/a")
                 links = [elemento.get_attribute('href') for elemento in conteudo]
 
                 if generalTools.checkValue(links) == 'ENCERRAR':
+                    checagem = False
                     continue
                 checagem2 = True
                 while checagem2:
@@ -80,10 +79,7 @@ def main():
                         checagem2 = False
                         continue
                     page = driver.find_elements(by='xpath', value='/html/body/div[8]/div[4]/div[1]/div/div[3]/div/div')
-                    #if generalTools.checkValue(page) == 'ENCERRAR':
-                    #    checagem2 = False
-                    #    ind = 1
-                    #    continue
+                    
                     if generalTools.checkEmptyValue(page) == 'NEXT' or generalTools.checkValue(page) == 'ENCERRAR':
                         checagem2 = False
                         ind = 1
@@ -93,19 +89,13 @@ def main():
                         checagem2 = False
                         ind = 1
                         continue
-                    #page = page.split("EXCLUSIVO SITE\n") if dept != 0 else page.split("s\n")
-                    
-                    #page = page.split("cada\n") if 'fones-de-ouvido' in driver.current_url else page.split("EXCLUSIVO SITE\n") if dept != 0 else page.split("s\n")
                     
                     page = page.split("cada\n") if 'eletroportateis' in driver.current_url else page.split("EXCLUSIVO SITE\n") if dept != 0 else page.split("s\n")
                     i = 0
                     for size, item in [(len(sublista), sublista) for sublista in [parte.split("\n")for parte in page]]:
-                        #if ind == 3 and i == 33:
-                        #    print('ok')
+                        
                         item = transformData.cleaningEmptySpace(item, links[0].split(".br/")[-1]) if len(item) != 1 else item
-                        #[item[i:i+3] for i in range(0, len(item), 3)]
-                        # Fazer um dicionáro para fazer um DE/PARA, com os links enviados
-                        #Resume[size](item, links[0].split(".br/")[-1])
+                        
                         print(i)
                         if len(item) > 16:
                             i = i + 1
@@ -116,6 +106,8 @@ def main():
                     if generalTools.checkValueWithComparation(item, page[-1]) == 'NEXT':
                         ind = ind + 1
                         
+
+        _=1
         # ---------------------------------------------------------- CONTINUANDO LÓGICA
         
         #logging.info(f"DOCUMENTO CRIADO COM SUCESSO!")
