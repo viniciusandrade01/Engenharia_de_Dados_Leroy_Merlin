@@ -68,15 +68,15 @@ def main():
             while checagem:
                 driver.get(departamento)
                 conteudo = driver.find_elements(by='xpath', value=f"/html/body/div[9]/div[1]/div[1]/section/div/div/div[1]/div/div[{generalTools.increase()}]/div/div/a")
-                #conteudo = driver.find_elements(by='xpath', value=f"/html/body/div[9]/div[1]/div[1]/section/div/div/div[1]/div/div[{13}]/div/div/a")
+                #conteudo = driver.find_elements(by='xpath', value=f"/html/body/div[9]/div[1]/div[1]/section/div/div/div[1]/div/div[{21}]/div/div/a")
                 links = [elemento.get_attribute('href') for elemento in conteudo]
-                
+
                 if generalTools.checkValue(links) == 'ENCERRAR':
                     continue
                 checagem2 = True
                 while checagem2:
                     driver.get(links[0]) if ind == 1 else driver.get(f"{links[0]}?page={ind}")
-                    if 'caixas' in driver.current_url or 'computadores' in driver.current_url or 'projetores' in driver.current_url or 'ring-light' in driver.current_url or 'drones' in driver.current_url or 'cftv' in driver.current_url or 'informatica' in driver.current_url:
+                    if 'caixas' in driver.current_url or 'computadores' in driver.current_url or 'projetores' in driver.current_url or 'ring-light' in driver.current_url or 'drones' in driver.current_url or 'cftv' in driver.current_url or 'informatica' in driver.current_url or ('eletroportateis' in driver.current_url and ind == 2):
                         checagem2 = False
                         continue
                     page = driver.find_elements(by='xpath', value='/html/body/div[8]/div[4]/div[1]/div/div[3]/div/div')
@@ -84,8 +84,12 @@ def main():
                     #    checagem2 = False
                     #    ind = 1
                     #    continue
-                    page = page[0].text
                     if generalTools.checkEmptyValue(page) == 'NEXT' or generalTools.checkValue(page) == 'ENCERRAR':
+                        checagem2 = False
+                        ind = 1
+                        continue
+                    page = page[0].text
+                    if generalTools.checkEmptyValue(page) == 'NEXT':
                         checagem2 = False
                         ind = 1
                         continue
@@ -93,11 +97,11 @@ def main():
                     
                     #page = page.split("cada\n") if 'fones-de-ouvido' in driver.current_url else page.split("EXCLUSIVO SITE\n") if dept != 0 else page.split("s\n")
                     
-                    page = page.split("EXCLUSIVO SITE\n") if dept != 0 else page.split("s\n")
+                    page = page.split("cada\n") if 'eletroportateis' in driver.current_url else page.split("EXCLUSIVO SITE\n") if dept != 0 else page.split("s\n")
                     i = 0
                     for size, item in [(len(sublista), sublista) for sublista in [parte.split("\n")for parte in page]]:
-                        if ind == 7 and i == 3:
-                            print('ok')
+                        #if ind == 3 and i == 33:
+                        #    print('ok')
                         item = transformData.cleaningEmptySpace(item, links[0].split(".br/")[-1]) if len(item) != 1 else item
                         #[item[i:i+3] for i in range(0, len(item), 3)]
                         # Fazer um dicionáro para fazer um DE/PARA, com os links enviados
