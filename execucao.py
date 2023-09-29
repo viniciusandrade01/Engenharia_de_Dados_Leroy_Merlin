@@ -10,6 +10,7 @@ from utils.selenium import GeneralSelenium
 import utils.logger_config as logger_config
 from utils.aws import AboutAWS
 import logging
+import re
 
 def main():
     try:
@@ -53,6 +54,8 @@ def main():
 
         driver = selenium.startSelenium()
         for dept in range(25):
+        # ITENS DE DEPARTAMENTO
+        #for dept in range(5,25):
             departamento = soup.find_all('a', class_='nav-link')[dept].attrs['href']
             driver.get(departamento)
             if 'climatizacao' in departamento.split("/")[-1] or 'cama' in departamento.split("/")[-1]:
@@ -61,7 +64,10 @@ def main():
             driver.implicitly_wait(10)
             checagem = True
             ind = 1
+
+            # ITENS DOS DEPARTAMENTOS
             aux = 0
+            #aux = 16
             while checagem:
                 driver.get(departamento)
                 aux = aux + 1
@@ -96,7 +102,7 @@ def main():
                         
                         item = transformData.cleaningEmptySpace(item, links[0].split(".br/")[-1]) if len(item) != 1 else item
                         
-                        print(i)
+                        print(f"Index: {i} / Url: {driver.current_url} / Valor: {item}")
                         if len(item) > 16:
                             i = i + 1
                             continue
@@ -106,7 +112,6 @@ def main():
                     if generalTools.checkValueWithComparation(item, page[-1]) == 'NEXT':
                         ind = ind + 1
                         
-
         _=1
         # ---------------------------------------------------------- CONTINUANDO LÓGICA
         
