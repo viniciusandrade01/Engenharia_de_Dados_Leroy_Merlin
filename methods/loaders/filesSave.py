@@ -14,6 +14,17 @@ logger_config.setup_logger(generalTools.getDate())
 class FileSavers:
     def __init__(self):
         self.df = pd.DataFrame(columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Preco_A_Vista', 'Produto', 'Desmembrar', 'Desconsiderar'])
+        self.resume = {
+                    1: self.saveValuesSizeOne, 2: self.saveValuesSizeTwo,
+                    3: self.saveValuesSizeThree, 4: self.saveValuesSizeFour,
+                    5: self.saveValuesSizeFive, 6: self.saveValuesSizeSix,
+                    7: self.saveValuesSizeSeven, 8: self.saveValuesSizeEight,
+                    9: self.saveValuesSizeNine, 10: self.saveValuesSizeTen,
+                    11: self.saveValuesSizeEleven, 12: self.saveValuesSizeTwelve,
+                    13: self.saveValuesSizeThirteen,
+                    14: self.saveValuesSizeFourteen, 
+                    15: self.saveValuesSizeFifteen, 16: self.saveValuesSizeSixteen
+        }
 
     def saveValuesSizeOne(self, data: list, product: str):
         pass
@@ -25,13 +36,22 @@ class FileSavers:
         pass
 
     def saveValuesSizeFour(self, data: list, product: str):
+        if len(data) != 4:
+            self.resume.get(len(data), lambda data, product: None)(data, product)
+            return
         self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Preco_Original', 'Produto'])], ignore_index=True)
     
     def saveValuesSizeFive(self, data: list, product: str):
+        if len(data) != 5:
+            self.resume.get(len(data), lambda data, product: None)(data, product)
+            return
         #self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Preco_Original', 'Desmembrar', 'Produto'])], ignore_index=True) if product != 'ar-condicionado' else pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Avaliacao','Preco_Original', 'Desmembrar', 'Produto'])], ignore_index=True)
         self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Preco_Original', 'Desmembrar', 'Produto'])], ignore_index=True)
     
     def saveValuesSizeSix(self, data: list, product: str):
+        if len(data) != 6:
+            self.resume.get(len(data), lambda data, product: None)(data, product)
+            return
         #self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Preco_Original', 'Parcela', 'Valor_Parcela', 'Produto'])], ignore_index=True)
         self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Desmembrar', 'Produto'])], ignore_index=True)
     
@@ -39,15 +59,27 @@ class FileSavers:
         data = transformData.cleaningEmptySpace("\n".join(data).split("EXCLUSIVO SITE")[-1].split("\n"), product)
         data = transformData.cleaningDataRepeated(data)
         #self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Produto', 'Desconsiderar'])], ignore_index=True)
+        if len(data) != 7:
+            self.resume.get(len(data), lambda data, product: None)(data, product)
+            return 
         self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Preco_A_Vista', 'Produto'])], ignore_index=True)
     
     def saveValuesSizeEight(self, data: list, product: str):
+        if len(data) != 8:
+            self.resume.get(len(data), lambda data, product: None)(data, product)
+            return
         self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Preco_A_Vista', 'Desmembrar', 'Produto'])], ignore_index=True)
     
     def saveValuesSizeNine(self, data: list, product: str):
+        if len(data) != 9:
+            self.resume.get(len(data), lambda data, product: None)(data, product)
+            return
         self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Preco_A_Vista', 'Desconsiderar', 'Desmembrar', 'Produto'])], ignore_index=True) if '$' in data[4] else pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Preco_A_Vista', 'Desmembrar', 'Produto'])], ignore_index=True)
 
     def saveValuesSizeTen(self, data: list, product: str):
+        if len(data) != 10:
+            self.resume.get(len(data), lambda data, product: None)(data, product)
+            return
         #self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Preco_A_Vista', 'Parcela', 'Desmembrar', 'Produto'])], ignore_index=True)
         self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Preco_A_Vista', 'Desconsiderar','Desmembrar', 'Produto'])], ignore_index=True)
     

@@ -10,7 +10,7 @@ from utils.selenium import GeneralSelenium
 import utils.logger_config as logger_config
 from utils.aws import AboutAWS
 import logging
-import re
+#import re
 
 def main():
     try:
@@ -102,7 +102,7 @@ def main():
                         
                         item = transformData.cleaningEmptySpace(item, links[0].split(".br/")[-1]) if len(item) != 1 else item
                         
-                        print(f"Index: {i} / Url: {driver.current_url} / Valor: {item}")
+                        print(f"Index: {i} / Url: {driver.current_url}")
                         if len(item) > 16:
                             i = i + 1
                             continue
@@ -111,7 +111,7 @@ def main():
                         i = i + 1
                     if generalTools.checkValueWithComparation(item, page[-1]) == 'NEXT':
                         ind = ind + 1
-                        
+
         _=1
         # ---------------------------------------------------------- CONTINUANDO LÓGICA
         
