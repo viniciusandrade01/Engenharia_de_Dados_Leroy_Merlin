@@ -104,16 +104,23 @@ class FileSavers:
     def openingSheets(self, directory: str, sheet: str, rows: int, footer: int):
         return pd.read_excel(f"{directory}", sheet_name=f"{sheet}", skiprows=rows, skipfooter=footer)
 
-    def creatingFinalDataFrame(self, df: pd.DataFrame, data: str, fileName, sep, nameDirectory, data_cap: str, file_type: str):
+    def creatingFinalDataFrame(self, data: str, fileName, sep, nameDirectory, file_type: str):
         novo_df = pd.DataFrame()
-        novo_df['SERIE'] = df['Código ISIN'].map(lambda x: str(x).replace("nan","").lstrip())
-        novo_df['TITULO'] = df.iloc[:,0].map(lambda x: f"'{x}'")
-        novo_df['DATA_VENCIMENTO'] = df['Data de Vencimento'][:].apply(lambda x: transformData.format_Date(x))
-        novo_df['DATA_REF'] = str(datetime.datetime.strptime(data, "%B de %Y").strftime("%Y-%m-%d"))
-        novo_df['DATA_CAPTURA'] = data_cap
-        novo_df['FINANCEIRO (R$ BI)'] = df.iloc[:,-1].map(lambda x: generalTools.zeroToEmpty(str(x)) if len(str(x)) == 1 else generalTools.nanToEmpty(str(x)))
-        novo_df['QUANTIDADE (MIL)'] = df.iloc[:,-2].map(lambda x: generalTools.zeroToEmpty(str(x)) if len(str(x)) == 1 else generalTools.nanToEmpty(str(x)))
-        novo_df['COD_REF'] = novo_df['SERIE'].apply(lambda x: f"'{x}'")
+        self.df = pd.read_csv("Testec.csv", sep='\t')
+        self.df.fillna("", inplace=True)
+        novo_df['Situacao'] = self.df['Situacao'].map(lambda x: x.title())
+        novo_df['Var_Desconto'] = self.df['Var_Desconto'].map(lambda x: generalTools.removeMinus(generalTools.percentageToEmpty(x)))
+        novo_df['Descricao'] = self.df['Descricao'].map(lambda x: generalTools.removeEllipsis(generalTools.cleaningStr(x)))
+        novo_df['Codigo'] = self.df['Codigo'].map(lambda x: generalTools.splitByEmptySpace(x)[-1])
+        novo_df['Avaliacao'] = self.df['Avaliacao'].map(lambda x: generalTools.removeParentheses(x))
+        novo_df['Preco_Original'] = self.df['Preco_Original'].map(lambda x: generalTools.replaceCommaToDot(generalTools.dotToEmpty(generalTools.extractValue(x, r'R\$ (\d{1,3}(?:\.\d{3})*(?:,\d{2})?) cada') if pd.notnull(x) else x)))
+        novo_df['Preco_A_Vista'] = self.df['Preco_A_Vista'].map(lambda x: generalTools.replaceCommaToDot(generalTools.dotToEmpty(generalTools.splitByEmptySpace(x.replace("cada",""))[-1])))
+        novo_df['Produto'] = self.df['Produto'].map(lambda x: generalTools.hyphenToEmptySpace(x.title()).replace("Tv", "Televisao"))
+
+        # CONTINUAR A PARTIR DAQUI
+        novo_df['Desmembrar'] = self.df['Desmembrar'].map(lambda x: generalTools.extractTwoValue(x, r'(\d+)x de R\$ ([\d,]+) s/juros', r'R\$ ([\d,]+) em até (\d+)x de R\$ ([\d,]+) s/juros', self.df))
+        novo_df['Desconsiderar'] = self.df['Desconsiderar']
+        novo_df['Data_Captura'] = generalTools.splitByEmptySpace(data)[0]
 
         novo_df = novo_df[(novo_df['QUANTIDADE (MIL)'] != '') & (novo_df['FINANCEIRO (R$ BI)'] != '')]
 

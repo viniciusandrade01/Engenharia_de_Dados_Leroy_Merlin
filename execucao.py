@@ -10,7 +10,6 @@ from utils.selenium import GeneralSelenium
 import utils.logger_config as logger_config
 from utils.aws import AboutAWS
 import logging
-#import re
 
 def main():
     try:
@@ -28,18 +27,25 @@ def main():
 
         # Pegando última versão webdriver    
         latest_chrome_version = driverChrome.getLatestChromeVersion()
+        logging.info("ÚLTIMA VERSÃO DO WEBDRIVER COLETADA COM SUCESSO.")
 
         generalTools.makeDirectory('chromeDriver')
         download_directory = os.path.join(os.path.abspath(os.path.dirname(__file__)),'chromeDriver')
         
         # Baixa o ChromeDriver com base na versão mais recente do Chrome
         driverChrome.downloadChromeDriver(latest_chrome_version, download_directory) 
+        logging.info("BAIXANDO ÚLTIMA VERSÃO DO WEBDRIVER.")
         
         name_directory = f"{jsonData['source']['generalLink']['params']['directory']}{generalTools.hyphenToNull(generalTools.splitByEmptySpace(generalTools.getDate())[0])}"
+        
+        fileSavers.creatingFinalDataFrame(generalTools.getDate(), f"{jsonData['source']['generalLink']['params']['nameFile']}{generalTools.hyphenToNull(generalTools.splitByEmptySpace(generalTools.getDate())[0])}", "\t", name_directory, jsonData['source']['generalLink']['filetype'])
 
         html, soup = webPageDataScrapers.requestGetDefault(jsonData['source']['generalLink']['url'])
         webPageDataScrapers.downloadUrl(html, jsonData['source']['generalLink']['params']['namehtml'], name_directory)
+        logging.info("INFORMAÇÕES DA URL BAIXADA COM SUCESSO.")
+
         
+        # DICIONÁRIO PARA FILTRAR A FUNÇÃO IDEAL PARA ORGANIZAÇÃO DOS DADOS
         Resume = {
                     1: fileSavers.saveValuesSizeOne, 2: fileSavers.saveValuesSizeTwo,
                     3: fileSavers.saveValuesSizeThree, 4: fileSavers.saveValuesSizeFour,
@@ -53,26 +59,23 @@ def main():
         }
 
         driver = selenium.startSelenium()
+        # ITENS DEPARTAMENTOS
         for dept in range(25):
-        # ITENS DE DEPARTAMENTO
-        #for dept in range(5,25):
             departamento = soup.find_all('a', class_='nav-link')[dept].attrs['href']
             driver.get(departamento)
             if 'climatizacao' in departamento.split("/")[-1] or 'cama' in departamento.split("/")[-1]:
                 continue
             
-            driver.implicitly_wait(10)
+            #driver.implicitly_wait(10)
             checagem = True
             ind = 1
 
-            # ITENS DOS DEPARTAMENTOS
+            # SUBITENS DOS DEPARTAMENTOS
             aux = 0
-            #aux = 16
             while checagem:
                 driver.get(departamento)
                 aux = aux + 1
                 conteudo = driver.find_elements(by='xpath', value=f"/html/body/div[9]/div[1]/div[1]/section/div/div/div[1]/div/div[{aux}]/div/div/a")
-                #conteudo = driver.find_elements(by='xpath', value=f"/html/body/div[9]/div[1]/div[1]/section/div/div/div[1]/div/div[{21}]/div/div/a")
                 links = [elemento.get_attribute('href') for elemento in conteudo]
 
                 if generalTools.checkValue(links) == 'ENCERRAR':
@@ -111,11 +114,9 @@ def main():
                         i = i + 1
                     if generalTools.checkValueWithComparation(item, page[-1]) == 'NEXT':
                         ind = ind + 1
-
-        _=1
-        # ---------------------------------------------------------- CONTINUANDO LÓGICA
         
-        #logging.info(f"DOCUMENTO CRIADO COM SUCESSO!")
+        logging.info("DOCUMENTO CRIADO COM SUCESSO!")
+        fileSavers.creatingFinalDataFrame(generalTools.getDate(), f"{jsonData['source']['generalLink']['params']['nameFile']}_{generalTools.hyphenToNull(generalTools.splitByEmptySpace(generalTools.getDate())[0])}", "\t", name_directory, jsonData['source']['generalLink']['filetype'])
         #s3 = client.createClient('s3')
         #localfile = f"{name_directory}/{fileName}.{file_type}"
         #client.uploadFile(s3, localfile, 'engdadostest', localfile)
