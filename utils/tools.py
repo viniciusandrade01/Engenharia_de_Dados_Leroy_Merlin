@@ -3,6 +3,7 @@ import os
 import datetime
 import logging
 import re
+import pandas as pd
 
 class GeneralTools:
     def __init__(self):
@@ -29,6 +30,12 @@ class GeneralTools:
     def hyphenToNull(self, dado: str):
         return dado.replace("-","")
     
+    def barToNull(self, dado: str):
+        return dado.replace("-","")
+
+    def plusToNull(self, dado: str):
+        return dado.replace("+","")
+    
     def hyphenToEmptySpace(self, dado: str):
         return dado.replace("-"," ")
     
@@ -37,6 +44,9 @@ class GeneralTools:
     
     def brlToEmpty(self, dado: str):
         return dado.replace("R$","")
+    
+    def cleaningAll(self, dado: str):
+        return dado.replace("á","a").replace("ã","a").replace("ó","o").replace("ç","c").replace("é","e")
     
     def commaToEmpty(self, dado: str):
         return dado.replace(",","")
@@ -103,11 +113,24 @@ class GeneralTools:
             #numero_de_parcelas = correspondencia1.group(1)
             #preco_por_parcela = correspondencia1.group(2)
             #return numero_de_parcelas, preco_por_parcela
-            return correspondencia1.group(1), correspondencia1.group(2)
+            return "%.2f" % float(int(correspondencia1.group(1)) * float(self.replaceCommaToDot(correspondencia1.group(2))))
         elif correspondencia2:
-            preco_total = correspondencia2.group(1)
-            numero_de_parcelas = correspondencia2.group(2)
-            preco_por_parcela = correspondencia2.group(3)
-            return numero_de_parcelas, preco_por_parcela
+            #preco_total = correspondencia2.group(1)
+            #numero_de_parcelas = correspondencia2.group(2)
+            #preco_por_parcela = correspondencia2.group(3)
+            return "%.2f" % float(int(correspondencia2.group(2)) * float(self.replaceCommaToDot(correspondencia2.group(3))))
         else:
-            return None, None
+            return ""
+        
+    def updatePrice(self, row):
+        return row['Desmembrar'] if pd.notna(row['Desmembrar']) else row['Preco_Original']
+
+    def updatePriceTypeTwo(self, row):
+        return row['Desmembrar'] if pd.notna(row['Desmembrar']) else row['Preco_Original']
+
+    def updateCodeColumn(self, row):
+        return int(row) if pd.to_numeric(row) else ""
+    
+    def checkValueOfTheColumn(self, columnName, type):
+        self.df = self.df[pd.to_numeric(self.df[columnName], errors='coerce').notnull()]
+        self.df[columnName] = self.df[columnName].astype(int)

@@ -38,7 +38,13 @@ def main():
         
         name_directory = f"{jsonData['source']['generalLink']['params']['directory']}{generalTools.hyphenToNull(generalTools.splitByEmptySpace(generalTools.getDate())[0])}"
         
-        fileSavers.creatingFinalDataFrame(generalTools.getDate(), f"{jsonData['source']['generalLink']['params']['nameFile']}{generalTools.hyphenToNull(generalTools.splitByEmptySpace(generalTools.getDate())[0])}", "\t", name_directory, jsonData['source']['generalLink']['filetype'])
+        # --- AJUSTAR, MOVER LÁ PRA BAIXO
+        df = fileSavers.creatingFinalDataFrame(generalTools.getDate(), "\t")
+        
+        fileSavers.generateFile(df, jsonData['source']['generalLink']['filetype'], name_directory, "\t", f"{jsonData['source']['generalLink']['params']['nameFileGeral']}{generalTools.hyphenToNull(generalTools.splitByEmptySpace(generalTools.getDate())[0])}", ['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Preco_A_Vista', 'Produto', 'Data_Captura'], "")
+
+        fileSavers.generateFile(df, jsonData['source']['generalLink']['filetype'], name_directory, "\t", f"{jsonData['source']['generalLink']['params']['nameFileOfertas']}{generalTools.hyphenToNull(generalTools.splitByEmptySpace(generalTools.getDate())[0])}", ['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Preco_A_Vista', 'Produto', 'Data_Captura'], "Ofertas")
+        # ---- ITENS ACIMA
 
         html, soup = webPageDataScrapers.requestGetDefault(jsonData['source']['generalLink']['url'])
         webPageDataScrapers.downloadUrl(html, jsonData['source']['generalLink']['params']['namehtml'], name_directory)
