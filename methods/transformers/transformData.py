@@ -72,3 +72,7 @@ class TransformData:
                 df = df.drop(columns=df.columns[len(df.columns)-count:])
             elif arg == df.iloc[0][-2]:
                 return df
+
+    #def applyRegexToColumns(self, df, origem_col, destino_col, regex_pattern):
+    #    df[destino_col] = df[origem_col].apply(lambda x: x if pd.isna(x) or pd.notna(pd.match(regex_pattern, x)) else None)
+    #    return df

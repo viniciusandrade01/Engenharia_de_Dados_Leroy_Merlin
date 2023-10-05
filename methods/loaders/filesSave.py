@@ -107,16 +107,99 @@ class FileSavers:
         return pd.read_excel(f"{directory}", sheet_name=f"{sheet}", skiprows=rows, skipfooter=footer)
 
     def creatingFinalDataFrame(self, data: str, sep):
-        novo_df = pd.DataFrame()
-        self.df = pd.read_csv("Testec.csv", sep='\t')
+        aux_df = pd.DataFrame() # ARQUIVO QUE MANIPULAREI
+        novo_df = pd.DataFrame() # O FINAL
+        alt_df = pd.DataFrame() # VOU ARMAZENAR AS COLUNAS QUE PRECISAM SER AJUSTADAS
+        self.df = pd.read_csv("Testec.csv", sep='\t') # ARQUIVO BASE, A SEGURANÇA
         self.df.fillna("", inplace=True)
+        aux_df = self.df
+        # AJUSTANDO DOCUMENTO BASE
+
+        # COLUNA SITUACAO
+        aux_df['Situacao'] = aux_df['Situacao'].map(lambda x: "EXCLUSIVO SITE" if x == '' else x)
+        novo_df = aux_df[aux_df['Situacao'].isin(['OFERTA', 'EXCLUSIVO SITE'])]
+        alt_df = aux_df[~aux_df['Situacao'].isin(['OFERTA', 'EXCLUSIVO SITE'])]
+        _=1
+        #df_aux.loc[(df_aux['Situacao'] != 'EXCLUSIVO SITE') & (df_aux['Situacao'] != 'OFERTA'), 'Situacao'] = ''
+
+        # COLUNA VAR_DESCONTO
+        #CERTINHA, A PRINCÍPIO
+        _=1
+
+        # COLUNA DESCRICAO
+        tratar = novo_df[novo_df['Descricao'].str.len() < 15]
+        novo_df = novo_df[novo_df['Descricao'].str.len() > 15]
+        alt_df = pd.concat([alt_df, tratar])
+        _=1
+
+        # COLUNA CODIGO
+        tratar = novo_df[novo_df['Codigo'].str.contains(r'Cód\. \d+', regex=True) != True]
+        novo_df = novo_df[novo_df['Codigo'].str.contains(r'Cód\. \d+', regex=True) == True]
+        alt_df = pd.concat([alt_df, tratar])
+        _=1
+
+        # COLUNA AVALIACAO
+        tratar = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)', regex=True) != True]
+        novo_df = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)', regex=True) == True]
+        alt_df = pd.concat([alt_df, tratar])
+        _=1
+        
+        # COLUNA PRECO_ORIGINAL
+        tratar = novo_df[novo_df['Preco_Original'].map(lambda x: generalTools.replaceCommaToDot(generalTools.dotToEmpty(generalTools.emptyValueToEmpty(x)))).str.contains(r'R\$\d+\.\d+cada', regex=True) != True]
+        #novo_df = novo_df['Preco_Original'].map(lambda x: generalTools.extractNumber(generalTools.replaceCommaToDot(generalTools.dotToEmpty(generalTools.emptyValueToEmpty(x))), r'R\$(\d+\.\d+)cada')) == True]
+        novo_df['Preco_Original'] = novo_df['Preco_Original'].map(lambda x: generalTools.extractNumber(generalTools.replaceCommaToDot(generalTools.dotToEmpty(generalTools.emptyValueToEmpty(x))), r'R\$(\d+\.\d+)cada'))
+        alt_df = pd.concat([alt_df, tratar])
+        _=1
+
+        # COLUNA PRECO_A_VISTA
+        tratar = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)', regex=True) != True]
+        novo_df = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)', regex=True) == True]
+        alt_df = pd.concat([alt_df, tratar])
+        _=1
+        
+        # COLUNA PRODUTO
+        tratar = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)', regex=True) != True]
+        novo_df = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)', regex=True) == True]
+        alt_df = pd.concat([alt_df, tratar])
+        _=1
+
+        # COLUNA DESMEMBRAR
+        tratar = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)', regex=True) != True]
+        novo_df = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)', regex=True) == True]
+        alt_df = pd.concat([alt_df, tratar])
+        _=1
+
+        # COLUNA DESCONSIDERAR
+        tratar = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)', regex=True) != True]
+        novo_df = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)', regex=True) == True]
+        alt_df = pd.concat([alt_df, tratar])
+        _=1
+        
+        #df_aux.loc[df_aux['Situacao'].str.contains('|'.join(['OFERTA', 'EXCLUSIVO SITE']), regex=True), 'Descricao'] = True
+        #df_aux['Descricao'] = df_aux.loc[df_aux['Situacao'].str.contains('|'.join(['OFERTA', 'EXCLUSIVO SITE']), regex=True) != True, 'Situacao']
+        #df_aux.loc[df_aux['Situacao'].str.contains('|'.join(['OFERTA', 'EXCLUSIVO SITE']), regex=True) != True, 'Situacao'] = ""
+        _=1
+        #self.df = transformData.applyRegexToColumns(self.df, 'Situacao', 'Descricao', r'(OFERTA|EXCLUSIVO SITE)')
+
+        _=1
+
+
+
+
+
+
         novo_df['Situacao'] = self.df['Situacao'].map(lambda x: x.title())
-        novo_df = novo_df[(novo_df['Situacao'] == 'Oferta') | (novo_df['Situacao'] == '')]
+
+
+
+        #novo_df = novo_df[(novo_df['Situacao'] == 'Oferta') | (novo_df['Situacao'] == '')]
         novo_df['Var_Desconto'] = self.df['Var_Desconto'].map(lambda x: generalTools.removeMinus(generalTools.percentageToEmpty(x)))
         novo_df['Descricao'] = self.df['Descricao'].map(lambda x: generalTools.removeParentheses(generalTools.plusToNull(generalTools.barToNull(generalTools.hyphenToNull(generalTools.cleaningAll(generalTools.removeEllipsis(generalTools.cleaningStr(x))))))))
         #novo_df['Codigo'] = self.df['Codigo'].apply(lambda x: pd.to_numeric(generalTools.splitByEmptySpace(x)[-1], errors='coerce')).dropna().astype(int)
         novo_df['Codigo'] = self.df['Codigo'].map(lambda x: generalTools.splitByEmptySpace(x)[-1])
         novo_df = novo_df[(novo_df['Codigo'].map(lambda x: len(x)) == 10) | (novo_df['Codigo'].map(lambda x: len(x)) == 8)]
+        #self.df.loc[self.df['Preco_Original'].str.contains(r'\(\d+\)', regex=True), 'Avaliacao'] = True
+        self.df.loc[self.df['Preco_Original'].str.contains(r'\(\d+\)', regex=True), 'Avaliacao'] = True
         novo_df['Avaliacao'] = self.df['Avaliacao'].map(lambda x: generalTools.removeParentheses(x))
         # SELECIONA OS CAMPOS COM VALORES DE AVALIAÇÕES COLETADOS
         #novo_df['Avaliacao] = novo_df[(novo_df['Avaliacao'].map(lambda x: len(x)) == 1) | (novo_df['Codigo'].map(lambda x: len(x)) == 2)]

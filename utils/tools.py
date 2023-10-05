@@ -50,6 +50,9 @@ class GeneralTools:
     
     def commaToEmpty(self, dado: str):
         return dado.replace(",","")
+
+    def replaceCommaToDot(self, dado: str):
+        return dado.replace(",",".")
     
     def dotToEmpty(self, dado: str):
         return dado.replace(".","")
@@ -104,6 +107,13 @@ class GeneralTools:
         modelo = padrao
         correspondencia = re.search(modelo, text)
         return correspondencia.group(1) if correspondencia else ""
+
+    def extractNumber(self, texto, padrao):
+        match = re.search(padrao, texto)
+        if match:
+            return match.group(1)
+        else:
+            return None
     
     def extractTwoValue(self, text, padrao1, padrao2, df):
         correspondencia1 = re.search(padrao1, text)
