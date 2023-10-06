@@ -39,17 +39,19 @@ def main():
         name_directory = f"{jsonData['source']['generalLink']['params']['directory']}{generalTools.hyphenToNull(generalTools.splitByEmptySpace(generalTools.getDate())[0])}"
         
         # --- AJUSTAR, MOVER LÁ PRA BAIXO
-        df = fileSavers.creatingFinalDataFrame(generalTools.getDate(), "\t")
+        #df, alt_df = fileSavers.validatingStructure(generalTools.getDate(), "\t")
         
-        fileSavers.generateFile(df, jsonData['source']['generalLink']['filetype'], name_directory, "\t", f"{jsonData['source']['generalLink']['params']['nameFileGeral']}{generalTools.hyphenToNull(generalTools.splitByEmptySpace(generalTools.getDate())[0])}", ['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Preco_A_Vista', 'Produto', 'Data_Captura'], "")
+        #df = transformData.movingDataToRightColumn(df, alt_df)
+        # criar função de dataframe, a partir da validação de estrutura acima
 
-        fileSavers.generateFile(df, jsonData['source']['generalLink']['filetype'], name_directory, "\t", f"{jsonData['source']['generalLink']['params']['nameFileOfertas']}{generalTools.hyphenToNull(generalTools.splitByEmptySpace(generalTools.getDate())[0])}", ['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Preco_A_Vista', 'Produto', 'Data_Captura'], "Ofertas")
+        #fileSavers.generateFile(df, jsonData['source']['generalLink']['filetype'], name_directory, "\t", f"{jsonData['source']['generalLink']['params']['nameFileGeral']}{generalTools.hyphenToNull(generalTools.splitByEmptySpace(generalTools.getDate())[0])}", ['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Preco_A_Vista', 'Produto', 'Data_Captura'], "")
+
+        #fileSavers.generateFile(df, jsonData['source']['generalLink']['filetype'], name_directory, "\t", f"{jsonData['source']['generalLink']['params']['nameFileOfertas']}{generalTools.hyphenToNull(generalTools.splitByEmptySpace(generalTools.getDate())[0])}", ['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Preco_A_Vista', 'Produto', 'Data_Captura'], "Ofertas")
         # ---- ITENS ACIMA
 
         html, soup = webPageDataScrapers.requestGetDefault(jsonData['source']['generalLink']['url'])
         webPageDataScrapers.downloadUrl(html, jsonData['source']['generalLink']['params']['namehtml'], name_directory)
         logging.info("INFORMAÇÕES DA URL BAIXADA COM SUCESSO.")
-
         
         # DICIONÁRIO PARA FILTRAR A FUNÇÃO IDEAL PARA ORGANIZAÇÃO DOS DADOS
         Resume = {
@@ -72,7 +74,7 @@ def main():
             if 'climatizacao' in departamento.split("/")[-1] or 'cama' in departamento.split("/")[-1]:
                 continue
             
-            #driver.implicitly_wait(10)
+            driver.implicitly_wait(10)
             checagem = True
             ind = 1
 

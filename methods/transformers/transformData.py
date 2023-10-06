@@ -1,4 +1,5 @@
 import datetime
+import re
 import time
 import pandas as pd
 import utils.logger_config as logger_config
@@ -72,6 +73,23 @@ class TransformData:
                 df = df.drop(columns=df.columns[len(df.columns)-count:])
             elif arg == df.iloc[0][-2]:
                 return df
+            
+    def movingDataToRightColumn(self, novo_df, alt_df):
+        df = pd.DataFrame()
+        alt_df.drop_duplicates(inplace=True)
+        for index in alt_df.index.tolist():
+            for situation, columns in enumerate(alt_df.columns.to_list()):
+                item = alt_df.apply(lambda row: '\n'.join(row), axis=1)[index].split("cada\n")
+                if len(item) == 2:
+                    for size in range(len(item)):
+                        item = self.cleaningEmptySpace(item, 'links[0].split(".br/")[-1]') if len(item) != 1 else item
+                        item[size].split("\n")
+                        _=1
+                item = alt_df[columns][index]
+                if re.findall(r'^(?!.*R\$).{18,}$', item, re.DOTALL)[0]:
+                    resultados = re.findall(r'^(?!.*R\$).{18,}$', item, re.DOTALL)[0]
+                #item = alt_df.apply(lambda row: '\n'.join(row), axis=1)[index]
+        _=1
 
     #def applyRegexToColumns(self, df, origem_col, destino_col, regex_pattern):
     #    df[destino_col] = df[origem_col].apply(lambda x: x if pd.isna(x) or pd.notna(pd.match(regex_pattern, x)) else None)

@@ -47,15 +47,28 @@ class FileSavers:
         if len(data) != 5:
             self.resume.get(len(data), lambda data, product: None)(data, product)
             return
-        #self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Preco_Original', 'Desmembrar', 'Produto'])], ignore_index=True) if product != 'ar-condicionado' else pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Avaliacao','Preco_Original', 'Desmembrar', 'Produto'])], ignore_index=True)
-        self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Preco_Original', 'Desmembrar', 'Produto'])], ignore_index=True)
+        if "(" in data[2]:
+            self.df =  pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Avaliacao','Preco_Original', 'Produto'])], ignore_index=True)
+        else:
+            self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Preco_Original', 'Desmembrar', 'Produto'])], ignore_index=True)
+        #!= 'ar-condicionado' analisar sobre ar-condicionado
     
     def saveValuesSizeSix(self, data: list, product: str):
         if len(data) != 6:
             self.resume.get(len(data), lambda data, product: None)(data, product)
             return
-        #self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Preco_Original', 'Parcela', 'Valor_Parcela', 'Produto'])], ignore_index=True)
-        self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Desmembrar', 'Produto'])], ignore_index=True)
+        if "(" in data[2]:
+            self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Desmembrar', 'Produto'])], ignore_index=True) 
+        elif 'OFERTA' in data[0]:
+            #['OFERTA', '-18%', 'Campainha Sem Fio Co... Intelbras', 'Cód. 91787101', 'R$ 96,90 ', 'eletroportateis-campainhas']
+            self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Produto'])], ignore_index=True)
+        elif 'à' in data[0]:
+            data = ("\n").join(data).split("s\n")
+            for item in data:
+                self.resume.get(len(item), lambda item, product: None)(data, product)
+                return
+        else:
+            print()
     
     def saveValuesSizeSeven(self, data: list, product: str):
         data = transformData.cleaningEmptySpace("\n".join(data).split("EXCLUSIVO SITE")[-1].split("\n"), product)
@@ -64,26 +77,42 @@ class FileSavers:
         if len(data) != 7:
             self.resume.get(len(data), lambda data, product: None)(data, product)
             return 
-        self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Preco_A_Vista', 'Produto'])], ignore_index=True)
+        if 'Cód' in data[3]:
+            self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Preco_A_Vista', 'Produto'])], ignore_index=True)
+        else:
+            data = ("\n").join(data).split("cada\n")
+            if len(data) != 7:
+                self.resume.get(len(data), lambda data, product: None)(data, product)
+                return
+            print()
     
     def saveValuesSizeEight(self, data: list, product: str):
         if len(data) != 8:
             self.resume.get(len(data), lambda data, product: None)(data, product)
             return
-        self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Preco_A_Vista', 'Desmembrar', 'Produto'])], ignore_index=True)
+        if 'Cód' in data[3]:
+            self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Preco_A_Vista', 'Desmembrar', 'Produto'])], ignore_index=True) 
+        else:
+            print() 
     
     def saveValuesSizeNine(self, data: list, product: str):
         if len(data) != 9:
             self.resume.get(len(data), lambda data, product: None)(data, product)
             return
-        self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Preco_A_Vista', 'Desconsiderar', 'Desmembrar', 'Produto'])], ignore_index=True) if '$' in data[4] else pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Preco_A_Vista', 'Desmembrar', 'Produto'])], ignore_index=True)
+        if '$' in data[4]:
+            self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Preco_A_Vista', 'Desconsiderar', 'Desmembrar', 'Produto'])], ignore_index=True)
+        else:
+            self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Preco_A_Vista', 'Desmembrar', 'Produto'])], ignore_index=True)
 
     def saveValuesSizeTen(self, data: list, product: str):
         if len(data) != 10:
             self.resume.get(len(data), lambda data, product: None)(data, product)
             return
         #self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Preco_A_Vista', 'Parcela', 'Desmembrar', 'Produto'])], ignore_index=True)
-        self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Preco_A_Vista', 'Desconsiderar','Desmembrar', 'Produto'])], ignore_index=True)
+        if 'Cód.' in data[3]:
+            self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Preco_A_Vista', 'Desconsiderar','Desmembrar', 'Produto'])], ignore_index=True)
+        else:
+            print()
     
     def saveValuesSizeEleven(self, data: list, product: str):
         pass
@@ -106,7 +135,7 @@ class FileSavers:
     def openingSheets(self, directory: str, sheet: str, rows: int, footer: int):
         return pd.read_excel(f"{directory}", sheet_name=f"{sheet}", skiprows=rows, skipfooter=footer)
 
-    def creatingFinalDataFrame(self, data: str, sep):
+    def validatingStructure(self, data: str, sep):
         aux_df = pd.DataFrame() # ARQUIVO QUE MANIPULAREI
         novo_df = pd.DataFrame() # O FINAL
         alt_df = pd.DataFrame() # VOU ARMAZENAR AS COLUNAS QUE PRECISAM SER AJUSTADAS
@@ -145,76 +174,36 @@ class FileSavers:
         _=1
         
         # COLUNA PRECO_ORIGINAL
-        tratar = novo_df[novo_df['Preco_Original'].map(lambda x: generalTools.replaceCommaToDot(generalTools.dotToEmpty(generalTools.emptyValueToEmpty(x)))).str.contains(r'R\$\d+\.\d+cada', regex=True) != True]
-        #novo_df = novo_df['Preco_Original'].map(lambda x: generalTools.extractNumber(generalTools.replaceCommaToDot(generalTools.dotToEmpty(generalTools.emptyValueToEmpty(x))), r'R\$(\d+\.\d+)cada')) == True]
-        novo_df['Preco_Original'] = novo_df['Preco_Original'].map(lambda x: generalTools.extractNumber(generalTools.replaceCommaToDot(generalTools.dotToEmpty(generalTools.emptyValueToEmpty(x))), r'R\$(\d+\.\d+)cada'))
+        tratar = novo_df[novo_df['Preco_Original'].str.contains(r'R\$\s?(\d{1,3}(?:\.\d{3})*(?:,\d{2})?)\s?cada', regex=True) != True]
+        novo_df = novo_df[novo_df['Preco_Original'].str.contains(r'R\$\s?(\d{1,3}(?:\.\d{3})*(?:,\d{2})?)\s?cada', regex=True) == True]
+        #novo_df['Preco_Original'] = novo_df['Preco_Original'].str.extract(r'R\$\s?(\d{1,3}(?:\.\d{3})*(?:,\d{2})?)\s?cada').map(lambda x: generalTools.replaceCommaToDot(generalTools.dotToEmpty(generalTools.emptyValueToEmpty(x))))
+        #novo_df['Preco_Original'] = novo_df['Preco_Original'].map(lambda x: generalTools.extractNumber(generalTools.replaceCommaToDot(generalTools.dotToEmpty(generalTools.emptyValueToEmpty(x))), r'R\$(\d+\.\d+)cada'))
         alt_df = pd.concat([alt_df, tratar])
         _=1
 
         # COLUNA PRECO_A_VISTA
-        tratar = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)', regex=True) != True]
-        novo_df = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)', regex=True) == True]
+        tratar = novo_df[novo_df['Preco_A_Vista'].str.contains(r'R\$\s?(\d{1,3}(?:\.\d{3})*(?:,\d{2})?)\s?cada', regex=True) != True]
+        novo_df = novo_df[novo_df['Preco_A_Vista'].str.contains(r'R\$\s?(\d{1,3}(?:\.\d{3})*(?:,\d{2})?)\s?cada', regex=True) == True]
         alt_df = pd.concat([alt_df, tratar])
         _=1
         
         # COLUNA PRODUTO
-        tratar = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)', regex=True) != True]
-        novo_df = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)', regex=True) == True]
-        alt_df = pd.concat([alt_df, tratar])
+        #CERTINHA, A PRINCÍPIO
         _=1
 
         # COLUNA DESMEMBRAR
-        tratar = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)', regex=True) != True]
-        novo_df = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)', regex=True) == True]
+        tratar = novo_df[novo_df['Desmembrar'].str.contains('R\$\s?\d{1,3}(?:\.\d{3})*(?:,\d{2})?(?:\s?(?:em até|de)?\s?\d{1,2}x\s?de\s?R\$\s?\d{1,3}(?:\.\d{3})*(?:,\d{2})?\s?(?:s/juros)?)?', regex=True) != True]
+        novo_df = novo_df[novo_df['Desmembrar'].str.contains('R\$\s?\d{1,3}(?:\.\d{3})*(?:,\d{2})?(?:\s?(?:em até|de)?\s?\d{1,2}x\s?de\s?R\$\s?\d{1,3}(?:\.\d{3})*(?:,\d{2})?\s?(?:s/juros)?)?', regex=True) == True]
         alt_df = pd.concat([alt_df, tratar])
         _=1
 
         # COLUNA DESCONSIDERAR
-        tratar = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)', regex=True) != True]
-        novo_df = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)', regex=True) == True]
+        tratar = novo_df[novo_df['Desconsiderar'].str.contains(r'à vista no pix|''') != True]
+        novo_df = novo_df[novo_df['Desconsiderar'].str.contains(r'à vista no pix|''') == True]
         alt_df = pd.concat([alt_df, tratar])
-        _=1
         
-        #df_aux.loc[df_aux['Situacao'].str.contains('|'.join(['OFERTA', 'EXCLUSIVO SITE']), regex=True), 'Descricao'] = True
-        #df_aux['Descricao'] = df_aux.loc[df_aux['Situacao'].str.contains('|'.join(['OFERTA', 'EXCLUSIVO SITE']), regex=True) != True, 'Situacao']
-        #df_aux.loc[df_aux['Situacao'].str.contains('|'.join(['OFERTA', 'EXCLUSIVO SITE']), regex=True) != True, 'Situacao'] = ""
-        _=1
-        #self.df = transformData.applyRegexToColumns(self.df, 'Situacao', 'Descricao', r'(OFERTA|EXCLUSIVO SITE)')
+        return novo_df, alt_df
 
-        _=1
-
-
-
-
-
-
-        novo_df['Situacao'] = self.df['Situacao'].map(lambda x: x.title())
-
-
-
-        #novo_df = novo_df[(novo_df['Situacao'] == 'Oferta') | (novo_df['Situacao'] == '')]
-        novo_df['Var_Desconto'] = self.df['Var_Desconto'].map(lambda x: generalTools.removeMinus(generalTools.percentageToEmpty(x)))
-        novo_df['Descricao'] = self.df['Descricao'].map(lambda x: generalTools.removeParentheses(generalTools.plusToNull(generalTools.barToNull(generalTools.hyphenToNull(generalTools.cleaningAll(generalTools.removeEllipsis(generalTools.cleaningStr(x))))))))
-        #novo_df['Codigo'] = self.df['Codigo'].apply(lambda x: pd.to_numeric(generalTools.splitByEmptySpace(x)[-1], errors='coerce')).dropna().astype(int)
-        novo_df['Codigo'] = self.df['Codigo'].map(lambda x: generalTools.splitByEmptySpace(x)[-1])
-        novo_df = novo_df[(novo_df['Codigo'].map(lambda x: len(x)) == 10) | (novo_df['Codigo'].map(lambda x: len(x)) == 8)]
-        #self.df.loc[self.df['Preco_Original'].str.contains(r'\(\d+\)', regex=True), 'Avaliacao'] = True
-        self.df.loc[self.df['Preco_Original'].str.contains(r'\(\d+\)', regex=True), 'Avaliacao'] = True
-        novo_df['Avaliacao'] = self.df['Avaliacao'].map(lambda x: generalTools.removeParentheses(x))
-        # SELECIONA OS CAMPOS COM VALORES DE AVALIAÇÕES COLETADOS
-        #novo_df['Avaliacao] = novo_df[(novo_df['Avaliacao'].map(lambda x: len(x)) == 1) | (novo_df['Codigo'].map(lambda x: len(x)) == 2)]
-
-        novo_df['Preco_Original'] = self.df['Preco_Original'].map(lambda x: generalTools.replaceCommaToDot(generalTools.dotToEmpty(generalTools.extractValue(x, r'R\$ (\d{1,3}(?:\.\d{3})*(?:,\d{2})?) cada') if pd.notnull(x) else x)))
-        novo_df['Preco_A_Vista'] = self.df['Preco_A_Vista'].map(lambda x: generalTools.replaceCommaToDot(generalTools.dotToEmpty(generalTools.splitByEmptySpace(x.replace("cada",""))[-1])))
-        novo_df['Produto'] = self.df['Produto'].map(lambda x: generalTools.hyphenToEmptySpace(x.title()).replace("Tv", "Televisao"))
-
-        novo_df['Desmembrar'] = self.df['Desmembrar'].map(lambda x: generalTools.extractTwoValue(x, r'(\d+)x de R\$ ([\d,]+) s/juros', r'R\$ ([\d,]+) em até (\d+)x de R\$ ([\d,]+) s/juros', self.df))
-        novo_df['Preco_Original'] = novo_df.apply(generalTools.updatePrice, axis=1)
-        #novo_df['Desconsiderar'] = self.df['Desconsiderar']
-        novo_df['Data_Captura'] = generalTools.splitByEmptySpace(data)[0]
-
-        return novo_df
-    
     def generateFile(self, novo_df: pd.DataFrame, file_type, diretorio, sep, fileName, columnsList: list, ofertas):
 
         novo_df = novo_df[columnsList]
