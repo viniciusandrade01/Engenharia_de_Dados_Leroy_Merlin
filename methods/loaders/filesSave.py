@@ -73,6 +73,7 @@ class FileSavers:
                     self.resume.get(len(item), lambda item, product: None)(data, product)
                     return
         elif 'NOVIDADE' in data[0]:
+            # COLOCAR UM 'EXCLUSIVO SITE' in data[0]
             self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Produto'])], ignore_index=True)
         else:
             print()
@@ -114,6 +115,8 @@ class FileSavers:
         if len(data) != 9:
             self.resume.get(len(data), lambda data, product: None)(data, product)
             return
+        #if 'OFERTA' in data[0] or '' in data[0]:
+        #    self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', #'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Preco_A_Vista', #'Desconsiderar', 'Desmembrar', 'Produto'])], ignore_index=True)
         if '$' in data[4]:
             self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Preco_A_Vista', 'Desconsiderar', 'Desmembrar', 'Produto'])], ignore_index=True)
         elif "(" in data[4]:
@@ -165,7 +168,7 @@ class FileSavers:
         aux_df = pd.DataFrame() # ARQUIVO QUE MANIPULAREI
         novo_df = pd.DataFrame() # O FINAL
         alt_df = pd.DataFrame() # VOU ARMAZENAR AS COLUNAS QUE PRECISAM SER AJUSTADAS
-        self.df = pd.read_csv("Testec.csv", sep='\t') # ARQUIVO BASE, A SEGURANÇA
+        #self.df = pd.read_csv("30k.csv", sep='\t') # ARQUIVO BASE, A SEGURANÇA
         self.df.fillna("", inplace=True)
         aux_df = self.df
         # AJUSTANDO DOCUMENTO BASE
@@ -174,60 +177,51 @@ class FileSavers:
         aux_df['Situacao'] = aux_df['Situacao'].map(lambda x: "EXCLUSIVO SITE" if x == '' else x)
         novo_df = aux_df[aux_df['Situacao'].isin(['OFERTA', 'EXCLUSIVO SITE'])]
         alt_df = aux_df[~aux_df['Situacao'].isin(['OFERTA', 'EXCLUSIVO SITE'])]
-        _=1
-        #df_aux.loc[(df_aux['Situacao'] != 'EXCLUSIVO SITE') & (df_aux['Situacao'] != 'OFERTA'), 'Situacao'] = ''
 
         # COLUNA VAR_DESCONTO
-        #CERTINHA, A PRINCÍPIO
-        _=1
+        tratar = novo_df[novo_df['Var_Desconto'].map(lambda x: '%' in x) == False]
+        novo_df = novo_df[novo_df['Var_Desconto'].map(lambda x: '%' in x) == True]
+        alt_df = pd.concat([alt_df, tratar])
 
         # COLUNA DESCRICAO
-        tratar = novo_df[novo_df['Descricao'].str.len() < 15]
-        novo_df = novo_df[novo_df['Descricao'].str.len() > 15]
+        tratar = novo_df[novo_df['Descricao'].isin(['OFERTA', 'EXCLUSIVO SITE', 'NOVIDADE'])]
+        novo_df = novo_df[~novo_df['Descricao'].isin(['OFERTA', 'EXCLUSIVO SITE', 'NOVIDADE'])]
         alt_df = pd.concat([alt_df, tratar])
-        _=1
 
         # COLUNA CODIGO
         tratar = novo_df[novo_df['Codigo'].str.contains(r'Cód\. \d+', regex=True) != True]
         novo_df = novo_df[novo_df['Codigo'].str.contains(r'Cód\. \d+', regex=True) == True]
         alt_df = pd.concat([alt_df, tratar])
-        _=1
 
         # COLUNA AVALIACAO
-        tratar = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)', regex=True) != True]
-        novo_df = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)', regex=True) == True]
+        tratar = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)|^$', regex=True) != True]
+        novo_df = novo_df[novo_df['Avaliacao'].str.contains(r'\(\d+\)|^$', regex=True) == True]
         alt_df = pd.concat([alt_df, tratar])
-        _=1
         
         # COLUNA PRECO_ORIGINAL
         tratar = novo_df[novo_df['Preco_Original'].str.contains(r'R\$\s?(\d{1,3}(?:\.\d{3})*(?:,\d{2})?)\s?cada', regex=True) != True]
         novo_df = novo_df[novo_df['Preco_Original'].str.contains(r'R\$\s?(\d{1,3}(?:\.\d{3})*(?:,\d{2})?)\s?cada', regex=True) == True]
-        #novo_df['Preco_Original'] = novo_df['Preco_Original'].str.extract(r'R\$\s?(\d{1,3}(?:\.\d{3})*(?:,\d{2})?)\s?cada').map(lambda x: generalTools.replaceCommaToDot(generalTools.dotToEmpty(generalTools.emptyValueToEmpty(x))))
-        #novo_df['Preco_Original'] = novo_df['Preco_Original'].map(lambda x: generalTools.extractNumber(generalTools.replaceCommaToDot(generalTools.dotToEmpty(generalTools.emptyValueToEmpty(x))), r'R\$(\d+\.\d+)cada'))
         alt_df = pd.concat([alt_df, tratar])
-        _=1
 
         # COLUNA PRECO_A_VISTA
         tratar = novo_df[novo_df['Preco_A_Vista'].str.contains(r'R\$\s?(\d{1,3}(?:\.\d{3})*(?:,\d{2})?)\s?cada', regex=True) != True]
         novo_df = novo_df[novo_df['Preco_A_Vista'].str.contains(r'R\$\s?(\d{1,3}(?:\.\d{3})*(?:,\d{2})?)\s?cada', regex=True) == True]
         alt_df = pd.concat([alt_df, tratar])
-        _=1
         
         # COLUNA PRODUTO
-        #CERTINHA, A PRINCÍPIO
-        _=1
 
         # COLUNA DESMEMBRAR
-        tratar = novo_df[novo_df['Desmembrar'].str.contains('R\$\s?\d{1,3}(?:\.\d{3})*(?:,\d{2})?(?:\s?(?:em até|de)?\s?\d{1,2}x\s?de\s?R\$\s?\d{1,3}(?:\.\d{3})*(?:,\d{2})?\s?(?:s/juros)?)?', regex=True) != True]
-        novo_df = novo_df[novo_df['Desmembrar'].str.contains('R\$\s?\d{1,3}(?:\.\d{3})*(?:,\d{2})?(?:\s?(?:em até|de)?\s?\d{1,2}x\s?de\s?R\$\s?\d{1,3}(?:\.\d{3})*(?:,\d{2})?\s?(?:s/juros)?)?', regex=True) == True]
+        tratar = novo_df[novo_df['Desmembrar'].str.contains('R\$\s?\d{1,3}(?:\.\d{3})*(?:,\d{2})?(?:\s?(?:em até|de)?\s?\d{1,2}x\s?de\s?R\$\s?\d{1,3}(?:\.\d{3})*(?:,\d{2})?\s?(?:s/juros)?)?|^$', regex=True) != True]
+        novo_df = novo_df[novo_df['Desmembrar'].str.contains('R\$\s?\d{1,3}(?:\.\d{3})*(?:,\d{2})?(?:\s?(?:em até|de)?\s?\d{1,2}x\s?de\s?R\$\s?\d{1,3}(?:\.\d{3})*(?:,\d{2})?\s?(?:s/juros)?)?|^$', regex=True) == True]
         alt_df = pd.concat([alt_df, tratar])
-        _=1
 
         # COLUNA DESCONSIDERAR
-        tratar = novo_df[novo_df['Desconsiderar'].str.contains(r'à vista no pix|''') != True]
-        novo_df = novo_df[novo_df['Desconsiderar'].str.contains(r'à vista no pix|''') == True]
+        tratar = novo_df[novo_df['Desconsiderar'].str.contains('à vista no pix|^$', regex=True) != True]
+        novo_df = novo_df[novo_df['Desconsiderar'].str.contains('à vista no pix|^$', regex=True) == True]
         alt_df = pd.concat([alt_df, tratar])
         
+        novo_df['Data_Captura'] = generalTools.splitByEmptySpace(data)[0]
+
         return novo_df, alt_df
 
     def generateFile(self, novo_df: pd.DataFrame, file_type, diretorio, sep, fileName, columnsList: list, ofertas):

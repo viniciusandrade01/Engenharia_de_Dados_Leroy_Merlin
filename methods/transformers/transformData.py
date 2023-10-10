@@ -7,10 +7,13 @@ import logging
 import fastavro
 from utils.tools import GeneralTools
 from methods.extractors.webPageDataScrapers import WebPageDataScrapers
-#from sqlalchemy import create_engine
+#from methods.loaders.filesSave import FileSavers
+
 generalTools = GeneralTools()
 webPageDataScrapers = WebPageDataScrapers()
-#data = time.strftime("%Y-%m-%d %H:%M:%S")
+#fileSavers = FileSavers()
+#
+# #data = time.strftime("%Y-%m-%d %H:%M:%S")
 logger_config.setup_logger(time.strftime("%Y-%m-%d %H:%M:%S"))
 
 class TransformData:
@@ -73,23 +76,21 @@ class TransformData:
                 df = df.drop(columns=df.columns[len(df.columns)-count:])
             elif arg == df.iloc[0][-2]:
                 return df
-            
-    def movingDataToRightColumn(self, novo_df, alt_df):
-        df = pd.DataFrame()
-        alt_df.drop_duplicates(inplace=True)
-        for index in alt_df.index.tolist():
-            for situation, columns in enumerate(alt_df.columns.to_list()):
-                item = alt_df.apply(lambda row: '\n'.join(row), axis=1)[index].split("cada\n")
-                if len(item) == 2:
-                    for size in range(len(item)):
-                        item = self.cleaningEmptySpace(item, 'links[0].split(".br/")[-1]') if len(item) != 1 else item
-                        item[size].split("\n")
-                        _=1
-                item = alt_df[columns][index]
-                if re.findall(r'^(?!.*R\$).{18,}$', item, re.DOTALL)[0]:
-                    resultados = re.findall(r'^(?!.*R\$).{18,}$', item, re.DOTALL)[0]
-                #item = alt_df.apply(lambda row: '\n'.join(row), axis=1)[index]
-        _=1
+
+    def ajustingFinalDataFrame(self, df: pd.DataFrame):
+        novo_df = pd.DataFrame()
+        novo_df['Situacao'] = df['Situacao'].map(lambda x: x.title())
+        novo_df['Var_Desconto'] = df['Var_Desconto'].map(lambda x: int(generalTools.percentageToEmpty(x)))
+        novo_df['Descricao'] = df['Descricao'].map(lambda x: f"'{generalTools.hyphenToEmptySpace(generalTools.plusToNull(generalTools.removeMinus(generalTools.removeParentheses(generalTools.removeEllipsis(x.replace('”',''))))))}'")
+        novo_df['Codigo'] = df['Codigo'].map(lambda x: f"'{generalTools.splitByEmptySpace(x)[-1]}'")
+        novo_df['Avaliacao'] = df['Avaliacao'].map(lambda x: generalTools.removeParentheses(x))
+        novo_df['Preco_Original'] = df['Preco_Original'].map(lambda x: generalTools.replaceCommaToDot(generalTools.dotToEmpty(generalTools.removeEmptySpaceInStr(generalTools.brlToEmpty(x).replace("cada","")))))
+        novo_df['Preco_A_Vista'] = df['Preco_A_Vista'].map(lambda x: generalTools.replaceCommaToDot(generalTools.dotToEmpty(generalTools.removeEmptySpaceInStr(generalTools.brlToEmpty(x).replace("cada","")))))
+        novo_df['Produto'] = df['Produto'].map(lambda x: generalTools.hyphenToEmptySpace(x.title()))
+
+        novo_df.reset_index(inplace=True)
+        novo_df.drop('index', axis=1, inplace=True)
+        return novo_df
 
     #def applyRegexToColumns(self, df, origem_col, destino_col, regex_pattern):
     #    df[destino_col] = df[origem_col].apply(lambda x: x if pd.isna(x) or pd.notna(pd.match(regex_pattern, x)) else None)

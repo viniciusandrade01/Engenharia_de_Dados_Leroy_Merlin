@@ -36,6 +36,9 @@ class GeneralTools:
     def plusToNull(self, dado: str):
         return dado.replace("+","")
     
+    def removeEmptySpaceInStr(self, dado: str):
+        return dado.lstrip().rstrip()
+    
     def hyphenToEmptySpace(self, dado: str):
         return dado.replace("-"," ")
     

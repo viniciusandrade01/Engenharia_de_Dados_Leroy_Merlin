@@ -40,6 +40,7 @@ class WebPageDataScrapers:
         os.remove(nome_zip)
 
     def downloadUrl(self, response, nome_arquivo, namedirectory):
+        nome_arquivo = f"{namedirectory}/{nome_arquivo.split('?')[0]}{generalTools.increase()}.txt" if '?' in nome_arquivo else f"{namedirectory}/{nome_arquivo}{generalTools.increase()}.txt"
         with open(nome_arquivo, 'wb') as file:
             file.write(response.content)
             #client = self.client.createClient('s3')
