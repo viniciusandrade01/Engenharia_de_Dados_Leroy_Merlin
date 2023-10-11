@@ -38,7 +38,7 @@ def main():
         
         name_directory = f"{jsonData['source']['generalLink']['params']['directory']}{generalTools.hyphenToNull(generalTools.splitByEmptySpace(generalTools.getDate())[0])}"
 
-        generalTools.makeDirectory(name_Direc)
+        generalTools.makeDirectory(name_directory)
 
         html, soup = webPageDataScrapers.requestGetDefault(jsonData['source']['generalLink']['url'])
         webPageDataScrapers.downloadUrl(html, f"{jsonData['source']['generalLink']['params']['namehtml']}", name_directory)
@@ -138,6 +138,8 @@ def main():
         s3 = client.createClient('s3')
         localfile = f"{name_directory}/{fileName}.{file_type}"
         client.uploadFile(s3, localfile, 'engdadostest', localfile)
+
+        client.createDynamoAndInsert('VarejistaTable', df)
         
     except FileNotFoundError as err:
         logging.error(f"ERRO: {generalTools.upperCase(err)}, O ARQUIVO JSON (data.json) NÃO FOI ENCONTRADO.")

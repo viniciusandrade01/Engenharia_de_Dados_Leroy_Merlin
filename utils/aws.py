@@ -2,6 +2,7 @@ import boto3
 import time
 import utils.logger_config as logger_config
 import logging
+import pandas as pd
 from utils.tools import GeneralTools
 from utils.tools import GeneralTools
 generalTools = GeneralTools()
@@ -41,3 +42,12 @@ class AboutAWS:
             logging.info(f"OBJETOS INSERIDOS NO BUCKET {str(generalTools.upperCase(e))} COM SUCESSO!")
         except Exception as e:
             logging.info(f"OCORREU UM ERRO AO TENTAR SUBIR OBJETO AO BUCKET: {str(e)}")
+
+    def createDynamoAndInsert(self, nameTable: str, df: pd.DataFrame):
+        df_dict = df.to_dict(orient='records')
+        dynamodb = boto3.resource('dynamodb', region_name=self.jsonData['aws_account']['region'], aws_access_key_id=self.jsonData['aws_account']['access_key'],
+                aws_secret_access_key=self.jsonData['aws_account']['secret_key'])
+        dynamoTable = dynamodb.Table(nameTable)
+        for item in df_dict:
+            dynamoTable.put_item(Item=item)
+            _=1
