@@ -38,6 +38,8 @@ def main():
         
         name_directory = f"{jsonData['source']['generalLink']['params']['directory']}{generalTools.hyphenToNull(generalTools.splitByEmptySpace(generalTools.getDate())[0])}"
 
+        generalTools.makeDirectory(name_Direc)
+
         html, soup = webPageDataScrapers.requestGetDefault(jsonData['source']['generalLink']['url'])
         webPageDataScrapers.downloadUrl(html, f"{jsonData['source']['generalLink']['params']['namehtml']}", name_directory)
         logging.info("INFORMAÇÕES DA URL BAIXADA COM SUCESSO.")

@@ -1,5 +1,4 @@
 import datetime
-import re
 import time
 import pandas as pd
 import utils.logger_config as logger_config
@@ -7,13 +6,10 @@ import logging
 import fastavro
 from utils.tools import GeneralTools
 from methods.extractors.webPageDataScrapers import WebPageDataScrapers
-#from methods.loaders.filesSave import FileSavers
 
 generalTools = GeneralTools()
 webPageDataScrapers = WebPageDataScrapers()
-#fileSavers = FileSavers()
-#
-# #data = time.strftime("%Y-%m-%d %H:%M:%S")
+
 logger_config.setup_logger(time.strftime("%Y-%m-%d %H:%M:%S"))
 
 class TransformData:
@@ -31,11 +27,6 @@ class TransformData:
     def dfToParquet(self, df: pd.DataFrame, file_name: str):
         df.to_parquet(file_name, index=False)
         return df.to_parquet()
-    
-    #def df_to_sql(self, df: pd.DataFrame, db_url, table_name):
-    #    engine = create_engine(db_url)
-    #    df.to_sql(table_name, engine, if_exists='replace', index=False)
-    #    return df.to_sql()
     
     def df_to_pickle(self, df: pd.DataFrame, file_name: str):
         df.to_pickle(file_name)
@@ -68,7 +59,6 @@ class TransformData:
         return list(filter(lambda item: item != '', data)) + [product]
 
     def deletingColumns(self, df: pd.DataFrame, diames: str):
-        #arg = str(datetime.datetime.strptime(diames, "%B de %Y").strftime("%b/%y")).title()
         arg = str(datetime.datetime.strptime(diames, "%Y-%m-%d").strftime("%b/%y")).title()
         count = 2
         for f in range(0, len(df.columns)):
@@ -91,7 +81,3 @@ class TransformData:
         novo_df.reset_index(inplace=True)
         novo_df.drop('index', axis=1, inplace=True)
         return novo_df
-
-    #def applyRegexToColumns(self, df, origem_col, destino_col, regex_pattern):
-    #    df[destino_col] = df[origem_col].apply(lambda x: x if pd.isna(x) or pd.notna(pd.match(regex_pattern, x)) else None)
-    #    return df

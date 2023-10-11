@@ -1,0 +1,785 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Acessórios de Celular | Leroy Merlin</title>
+<link rel="dns-prefetch" href=" https://www.googletagmanager.com">
+<link rel="preconnect" href=" https://www.googletagmanager.com">
+<link rel="dns-prefetch" href="https://connect.facebook.net">
+<link rel="preconnect" href="https://connect.facebook.net">
+<link rel="dns-prefetch" href="https://script.hotjar.com">
+<link rel="preconnect" href="https://script.hotjar.com">
+<link rel="dns-prefetch" href="https://vars.hotjar.com">
+<link rel="preconnect" href="https://vars.hotjar.com">
+<link rel="dns-prefetch" href="https://cdn.leroymerlin.com.br/">
+<link rel="preconnect" href="https://cdn.leroymerlin.com.br/">
+<link rel="preload" href="https://cdn.leroymerlin.com.br/assets/frontend/fonts/Glyphs.woff" as="font" type="font/woff" crossorigin="annonymous" />
+<link rel="preload" href="https://cdn.leroymerlin.com.br/assets/frontend/fonts/LeroyMerlinSans-Web-Regular.woff" as="font" type="font/woff" crossorigin="annonymous" />
+<link rel="preload" href="https://cdn.leroymerlin.com.br/assets/frontend/fonts/LeroyMerlinSans-Web-SemiBold.woff" as="font" type="font/woff" crossorigin="annonymous" />
+<link rel="dns-prefetch" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="dns-prefetch" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.google-analytics.com">
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-H4HJ');</script>
+
+<style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+    h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+    (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+    })(window,document.documentElement,'async-hide','dataLayer',4000,
+    {'OPT-ND4RQV2':true});</script>
+<script async src="https://www.googleoptimize.com/optimize.js?id=OPT-ND4RQV2" onerror="dataLayer.hide.end && dataLayer.hide.end()"></script>
+<meta name="robots" content="NOODP">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link href="https://cdn.leroymerlin.com.br/assets/favicon.ico" type="image/x-icon" rel="icon" />
+<link rel="apple-touch-icon" href="https://cdn.leroymerlin.com.br/assets/ico-leroy_60x60.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://cdn.leroymerlin.com.br/assets/ico-leroy_76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://cdn.leroymerlin.com.br/assets/ico-leroy_152x152.png">
+<meta name="theme-color" content="#72bf44" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="msvalidate.01" content="F05ACB8797C9D9067A24A09B973679BE" />
+<meta data-region="grande_sao_paulo">
+<meta name="csrf-token" content="0aWIYjh1ZITnl7cJBpVdcJXaGWP2Q9l8l9jird7w">
+<link rel="canonical" href="https://www.leroymerlin.com.br/fones-de-ouvido?page=16" />
+<meta name="ga-track" content="departamentos/audio-e-video/fones-de-ouvido" data-page-type="category/entry-key-react" />
+<meta name="is-algolia-active" content="1" />
+<meta name="description" content="Buscando Acessórios de Celular? Acesse e confira as melhores ofertas no site da Leroy Merlin!" />
+<meta property="og:title" content="Acessórios de Celular | Leroy Merlin" />
+<meta property="og:description" content="Buscando Acessórios de Celular? Acesse e confira as melhores ofertas no site da Leroy Merlin!" />
+<meta property="og:image" content="https://cdn.leroymerlin.com.br/categories/acessorios_de_celular_db0b_300x300.jpg" />
+<meta property="og:url" content="https://www.leroymerlin.com.br/institucional/politica-de-privacidade" />
+<meta property="og:type" content="website" />
+<meta property="fb:app_id" content="1302962583545114" />
+<meta name="ga-track" content="departamentos/audio-e-video/fones-de-ouvido" data-page-type="category/entry-key-react" />
+<meta name="friendly-category" content="dep/aud-e-vid/fon-de-ouv" data-page-type="category/entry-key-react" />
+<link rel="next" href="https://www.leroymerlin.com.br/fones-de-ouvido?page=17">
+<link rel="prev" href="https://www.leroymerlin.com.br/fones-de-ouvido?page=15">
+
+<script type="application/ld+json">
+    {"@context":"http:\/\/schema.org","@type":"Organization","name":"https:\/\/www.leroymerlin.com.br\/institucional\/sobre-a-leroy-merlin","logo":"https:\/\/cdn.leroymerlin.com.br\/assets\/images\/lizard\/logo-leroy.svg","address":[{"@type":"PostalAddress","addressRegion":"SP","addressLocality":"S\u00e3o Paulo e Regi\u00e3o"},{"@type":"PostalAddress","addressRegion":"RJ","addressLocality":"Rio de Janeiro"},{"@type":"PostalAddress","addressRegion":"SP","addressLocality":"Campinas"},{"@type":"PostalAddress","addressRegion":"RS","addressLocality":"Porto Alegre e Regi\u00e3o"},{"@type":"PostalAddress","addressRegion":"SP","addressLocality":"Ribeir\u00e3o Preto"},{"@type":"PostalAddress","addressRegion":"SP","addressLocality":"Sorocaba"},{"@type":"PostalAddress","addressRegion":"PR","addressLocality":"Estado do Paran\u00e1"},{"@type":"PostalAddress","addressRegion":"MG","addressLocality":"Uberl\u00e2ndia"},{"@type":"PostalAddress","addressRegion":"DF","addressLocality":"Distrito Federal"},{"@type":"PostalAddress","addressRegion":"SP","addressLocality":"Vale do Para\u00edba"},{"@type":"PostalAddress","addressRegion":"SP","addressLocality":"S\u00e3o Jos\u00e9 do Rio Preto"},{"@type":"PostalAddress","addressRegion":"GO","addressLocality":"Goi\u00e2nia"},{"@type":"PostalAddress","addressRegion":"MG","addressLocality":"Estado de Minas Gerais"},{"@type":"PostalAddress","addressRegion":"PR","addressLocality":"Londrina"},{"@type":"PostalAddress","addressRegion":"SC","addressLocality":"Santa Catarina"},{"@type":"PostalAddress","addressRegion":"CE","addressLocality":"Cear\u00e1"},{"@type":"PostalAddress","addressRegion":"MS","addressLocality":"Mato Grosso do Sul"},{"@type":"PostalAddress","addressRegion":"MT","addressLocality":"Mato Grosso"},{"@type":"PostalAddress","addressRegion":"AL","addressLocality":"Alagoas"},{"@type":"PostalAddress","addressRegion":"RN","addressLocality":"Natal"},{"@type":"PostalAddress","addressRegion":"ES","addressLocality":"Esp\u00edrito Santo"},{"@type":"PostalAddress","addressRegion":"SP","addressLocality":"Baixada Santista"},{"@type":"PostalAddress","addressRegion":"AC","addressLocality":"Acre"},{"@type":"PostalAddress","addressRegion":"RO","addressLocality":"Rond\u00f4nia"},{"@type":"PostalAddress","addressRegion":"BA","addressLocality":"Bahia"},{"@type":"PostalAddress","addressRegion":"-","addressLocality":"Marketplace"},{"@type":"PostalAddress","addressRegion":"SP","addressLocality":"L'espace AD S\u00e3o Paulo"},{"@type":"PostalAddress","addressRegion":"-","addressLocality":"Demais Regi\u00f5es"}],"telephone":["4007 1380","0800 602 1380"],"url":"https:\/\/www.leroymerlin.com.br\/","sameAs":["https:\/\/www.twitter.com\/LeroyMerlinBRA","https:\/\/facebook.com\/LeroyMerlinBrasil","https:\/\/instagram.com\/leroymerlinbrasil","https:\/\/pinterest.com\/leroymerlinbr","https:\/\/youtube.com\/LeroyMerlinBRA"]}
+  </script>
+
+<script type="application/ld+json">
+    {"@context":"http:\/\/schema.org","@type":"WebSite","url":"https:\/\/www.leroymerlin.com.br\/","potentialAction":{"@type":"SearchAction","@id":"main-search-bar","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/www.leroymerlin.com.br\/search?q={term}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":"http:\/\/schema.org\/True","valueName":"term"}}}
+  </script>
+
+<script type="application/ld+json">
+    [{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/climatizacao-e-ventilacao","name":"Ar e Ventila\u00e7\u00e3o"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/audio-e-video","name":"\u00c1udio, V\u00eddeo e TVs"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/banheiros","name":"Banheiros"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/cama-mesa-e-banho","name":"Cama, Mesa e Banho"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/cozinhas-e-areas-de-servico","name":"Cozinhas e \u00c1reas de Servi\u00e7o"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/decoracao","name":"Decora\u00e7\u00e3o"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/eletrodomesticos","name":"Eletrodom\u00e9sticos"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/eletroportateis","name":"Eletroport\u00e1teis"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/ferragens","name":"Ferragens"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/ferramentas","name":"Ferramentas"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/informatica","name":"Inform\u00e1tica"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/iluminacao","name":"Ilumina\u00e7\u00e3o"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/jardim-e-lazer","name":"Jardim e Varanda"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/limpeza-e-manutencao","name":"Limpeza da Casa"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/marcenaria-e-madeiras","name":"Madeiras"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/materiais-de-construcao","name":"Materiais de Constru\u00e7\u00e3o"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/materiais-eletricos","name":"Materiais El\u00e9tricos"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/materiais-hidraulicos","name":"Materiais Hidr\u00e1ulicos"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/moveis","name":"M\u00f3veis"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/organizacao","name":"Organiza\u00e7\u00e3o da Casa"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/acessorios-para-pets","name":"Pet Shop"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/tintas-e-acessorios","name":"Pintura e Acess\u00f3rios"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/pisos-e-revestimentos","name":"Pisos e Revestimentos"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/portas-janelas-e-portoes","name":"Portas, Janelas e Port\u00f5es"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/seguranca-e-comunicacao","name":"Seguran\u00e7a e Comunica\u00e7\u00e3o"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/utilidades-domesticas","name":"Utilidades Dom\u00e9sticas"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/inspire-se","name":"Inspire-se"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/dicas","name":"Dicas"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/faca-voce-mesmo","name":"Fa\u00e7a Voc\u00ea Mesmo"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/cursos-e-eventos","name":"Cursos e Eventos"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/tendencias","name":"Tend\u00eancias"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/atitudes-sustentaveis","name":"Atitudes Sustent\u00e1veis"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/institucional\/facilidades-nas-lojas","name":"Facilidades nas lojas"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/institucional\/venda-faturada","name":"Venda Faturada Empresas"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/institucional\/garantia-estendida-leroy-merlin","name":"Garantia Estendida Leroy Merlin"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/institucional\/politica-de-troca-e-devolucao","name":"Pol\u00edtica de Troca"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/institucional\/politica-de-troca-e-devolucao","name":"Pol\u00edtica de Pagamento"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/institucional\/politica-de-entrega","name":"Pol\u00edtica de Entrega"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/institucional\/politica-de-privacidade","name":"Pol\u00edtica de Privacidade"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/institucional\/termos-e-condicoes-de-uso-do-site","name":"Termos e Condi\u00e7\u00f5es"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/institucional\/perguntas-frequentes-do-ecommerce","name":"FAQ de eCommerce"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/institucional\/perguntas-frequentes-da-loja-fisica","name":"FAQ de Loja F\u00edsica"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/institucional\/central-de-atendimento","name":"Central de Atendimento"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/institucional\/sobre-a-leroy-merlin","name":"A Leroy Merlin"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/institucional\/historia","name":"Hist\u00f3ria"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/institucional\/sustentabilidade","name":"Sustentabilidade"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/institucional\/assessoria-de-imprensa","name":"Assessoria de Imprensa"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"http:\/\/jobs.kenoby.com\/leroymerlin","name":"Trabalhe Conosco"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/institucional\/redes-sociais","name":"Redes Sociais"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/institucional\/ofereca-um-imovel","name":"Ofere\u00e7a um im\u00f3vel"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com","name":"Site Internacional"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/institucional\/fornecedor-da-leroy-merlin","name":"Seja um fornecedor"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/lista.leroymerlin.com.br","name":"Termos mais buscados"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/dicas","name":"Dicas"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/institucional\/monte-seu-projeto-em-3d","name":"Projetos e Calculadoras"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/institucional\/facilidades-nas-lojas","name":"Servi\u00e7os"},{"@context":"http:\/\/schema.org","@type":"SiteNavigationElement","url":"https:\/\/www.leroymerlin.com.br\/lojas","name":"Lojas"}]
+  </script>
+<script type="application/ld+json">
+      [{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/monofone_pop_phone_microfone_p2_fone_ouvido_kit_3_und_1570715161_0c6a_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/monofone-pop-phone-microfone-p2-fone-ouvido-kit-3-und_1570715161","name":"Monofone Pop Phone Microfone P2 Fone Ouvido Kit 3 Und","description":"Com este descolado monofone pop phone estilo vintage  voc\u00ea pode fazer chamadas e v\u00eddeo confer\u00eancias de maneira inusitada.  ele possui apar\u00eancia semelhante aos telefones convencionais  garantindo a qualidade de som e familiaridade com o produto.\u00a0  o pop phone tem bot\u00f5es de vol...","sku":1570715161,"brand":"materiais-eletricos\/extensoes-eletricas-e-filtros-de-linha\/carregador-portatil","mpn":"7807034200085","offers":[{"@type":"Offer","price":38.7,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/monofone-pop-phone-microfone-p2-fone-ouvido-kit-3-und_1570715161","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/cabo_usb_cabo_usb_2_0_am_am_1,8_m_1567728839_60aa_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/cabo-usb-cabo-usb-2-0-am-am-1,8-m_1567728839","name":"Cabo Usb Cabo Usb 2.0 Am\/am 1,8 M","description":"Cabo usb 2.0 conectores tipo a macho am para a macho am , para transferencia de dados de ate 480mbps,\n1,8 metros de comprimento, para uso em aparelhos com entradasaida usb\n\nembalagem: unidade","sku":1567728839,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7897013553004","offers":[{"@type":"Offer","price":21.97,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/cabo-usb-cabo-usb-2-0-am-am-1,8-m_1567728839","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/kit_de_cabos_usb_2_0_preto_6_em_1_general_electric_038244_1570770692_43e9_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/kit-de-cabos-usb-2-0-preto-6-em-1-general-electric-038244_1570770692","name":"Kit De Cabos Usb 2.0 Preto 6 Em 1 General Electric - 038244","description":"Kit de cabos usb 2.0 6 em 1 preto general electric - 038244\u00a0\u00a0 \u00a0 o kit universal de cabos usb 2.0 ge \u00e9 a solu\u00e7\u00e3o perfeita para todas as suas necessidades de conex\u00f5es usb. Este kit vem com adaptadores multi-uso que se encaixam nos principais dispositivos usb de hoje, como table...","sku":1570770692,"brand":"materiais-eletricos\/extensoes-eletricas-e-filtros-de-linha\/carregador-portatil","mpn":"030878382441","offers":[{"@type":"Offer","price":32.9,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/kit-de-cabos-usb-2-0-preto-6-em-1-general-electric-038244_1570770692","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/conversor_adaptador_type_c_x_rj45_lan_usb_3_0_gigabit_10_100__1571400019_becc_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/conversor-adaptador-type-c-x-rj45-lan-usb-3-0-gigabit-10-100-1000mbps_1571400019","name":"Conversor Adaptador Type-c X Rj45 Lan Usb 3.0 Gigabit 10\/100\/1000mbps","description":"Porta type c para conversor de cabo de rede lan ethernet gigabit rj45 usb interface padr\u00e3o do tipe c, compat\u00edvel com a interface padr\u00e3o 2.0 \/ 1.1 os laptops finos e finos sem interface rj45 s\u00e3o suportados, como macbook air, ultrabooks, laptops e notebooks chromebook suporte a...","sku":1571400019,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7898652418570","offers":[{"@type":"Offer","price":104.89,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/conversor-adaptador-type-c-x-rj45-lan-usb-3-0-gigabit-10-100-1000mbps_1571400019","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/cabo_usb_x_lightning_1m_2a_cb_l10bk_preto_c3_tech_1571400074_7402_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/cabo-usb-x-lightning-1m-2a-cb-l10bk-preto-c3-tech_1571400074","name":"Cabo Usb X Lightning 1m 2a Cb-l10bk Preto C3 Tech","description":"Cabo usb para recarga e sincronizacao de dados atraves da conexao usb-lightning  compativel com ios. Recarregue mais rapido seus dispositivos eletronicos em 2 amperes.","sku":1571400074,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7898555219281","offers":[{"@type":"Offer","price":12.9,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/cabo-usb-x-lightning-1m-2a-cb-l10bk-preto-c3-tech_1571400074","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/cabo_usb_x_usb_c_1m_2a_cb_c11pk_rosa_c3_tech_1571399911_5bee_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/cabo-usb-x-usb-c-1m-2a-cb-c11pk-rosa-c3-tech_1571399911","name":"Cabo Usb X Usb-c 1m 2a Cb-c11pk Rosa C3 Tech","description":"Modelo:cb-c11pkrefer\u00eancia:441012102050apresenta\u00e7\u00e3o:cabo de dados usb tipo c para recarga e leitura de dados  ideal para dispositivos com sistema android e ios. Com o corpo revestido em malha de tecido  garante maior durabilidade no uso do dia a dia.dimens\u00e3o : 6*15*1000mmpeso:...","sku":1571399911,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7898555219274","offers":[{"@type":"Offer","price":16.9,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/cabo-usb-x-usb-c-1m-2a-cb-c11pk-rosa-c3-tech_1571399911","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/conversor_usb_3_0_para_rj45_gigabit_ethernet_comtac_9392_1571399948_1ce0_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/conversor-usb-3-0-para-rj45-gigabit-ethernet-comtac-9392_1571399948","name":"Conversor Usb 3.0 Para Rj45 Gigabit Ethernet Comtac 9392","description":"O conversor usb 3.0 para rj-45 ethernet gigabit transforma uma porta usb em uma conex\u00e3o de rede rj-45.com ele cria-se uma nova conex\u00e3o de rede via cabo em notebooks  netbooks e nos mais novos ultrabooks que n\u00e3o possuem conex\u00e3o rj-45 ou simplesmente substitui uma porta rj-45 d...","sku":1571399948,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7898938795500","offers":[{"@type":"Offer","price":159.9,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/conversor-usb-3-0-para-rj45-gigabit-ethernet-comtac-9392_1571399948","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/hub_usb_tipo_c___type_c_para_3_usb_3_0___rj45_1000_mbps_gigab_1571400571_b419_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/hub-usb-tipo-c---type-c-para-3-usb-3-0---rj45-1000-mbps-gigabit-hc-4rj_1571400571","name":"Hub Usb Tipo C \/ Type C Para 3 Usb 3.0 + Rj45 1000 Mbps Gigabit - Hc-4rj","description":"A linha tipo c (type c) \u00e9 a mais recente aplica\u00e7\u00e3o dos padr\u00f5es usb. Praticamente todos os novos dispositivos lan\u00e7ados no mercado recentemente contam com pelo menos uma porta tipo c, como smartphones, notebooks, computadores, pendrives, etc.o hub hc-4rj da vinik permite a exte...","sku":1571400571,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7908445402492","offers":[{"@type":"Offer","price":357.22,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/hub-usb-tipo-c---type-c-para-3-usb-3-0---rj45-1000-mbps-gigabit-hc-4rj_1571400571","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/cabo_usb_3_0_de_dados_macho_macho_1_5m_preto_grosso_knup_1571400063_dd9b_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/cabo-usb-3-0-de-dados-macho-macho-1-5m-preto-grosso-knup_1571400063","name":"Cabo Usb 3.0 De Dados Macho\/macho 1.5m Preto Grosso Knup","description":"Descri\u00e7\u00e3o do produtocabo usb 3.0- usb 3.0 tipo a macho x usb 3.0 a macho- plug & play- comprimento do cabo: 1,5 metrosrecomendamos o uso do cabo com dispositivos usb 3.0 para o m\u00e1ximo desempenho, tamb\u00e9m compat\u00edvel com a vers\u00e3o usb 2.0","sku":1571400063,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7898652414664","offers":[{"@type":"Offer","price":28.89,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/cabo-usb-3-0-de-dados-macho-macho-1-5m-preto-grosso-knup_1571400063","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/cabo_adaptador_usb_3_0_para_gigabit_ethernet_rj45__10_100_100_1571400099_a838_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/cabo-adaptador-usb-3-0-para-gigabit-ethernet-rj45--10-100-1000--mbps_1571400099","name":"Cabo Adaptador Usb 3.0 Para Gigabit Ethernet Rj45 (10\/100\/1000) Mbps","description":"Adaptador rede ethernet usb 3.0 gigabit 10\/100\/1000desfrute de toda velocidade da sua internet de at\u00e9 1000 megas com este adaptador de rede gigabit.este adaptador permite a conex\u00e3o de rede via cabo em seu computador ou notebook com windows, linux ou macos. Basta plugar na por...","sku":1571400099,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7898652418600","offers":[{"@type":"Offer","price":104.89,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/cabo-adaptador-usb-3-0-para-gigabit-ethernet-rj45--10-100-1000--mbps_1571400099","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/cabo_usb_macho_p__mini_usb_femea_md9_1244_c5_pinos_1571399956_1aa1_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/cabo-usb-macho-p--mini-usb-femea-md9-1244-c5-pinos_1571399956","name":"Cabo Usb Macho P\/ Mini Usb Femea Md9 1244 C5 Pinos","description":"Suporta usb padr\u00e3o 2.0 ponta a-usb ponta b-mini-usb;    alta taxa de transfer\u00eancia de dados  com velocidade de at\u00e9 480 mbps;    plug e play;    material de revestimento externo - pvc;    filtro toroidal - n\u00e3o;    cor: preto","sku":1571399956,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7897054612814","offers":[{"@type":"Offer","price":27.9,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/cabo-usb-macho-p--mini-usb-femea-md9-1244-c5-pinos_1571399956","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/mini_carregador_usb_p_embutir_moveis_diversos_5v_2_1a_preto_1571399952_0178_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/mini-carregador-usb-p-embutir-moveis-diversos-5v-2-1a-preto_1571399952","name":"Mini Carregador Usb P Embutir Moveis Diversos 5v 2 1a Preto","description":"Mini usb charger    inovador  \u00fatil e discreto.    mini carregador usb charger \u00e9 um produto extremamente \u00fatil para carregar seu smartphone  tablet ou  at\u00e9 mesmo  ouvir m\u00fasica conectando seu ipod.  a praticidade que voc\u00ea pode ter em todos os ambientes da sua casa ou no escrit\u00f3r...","sku":1571399952,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7899951424941","offers":[{"@type":"Offer","price":140.7,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/mini-carregador-usb-p-embutir-moveis-diversos-5v-2-1a-preto_1571399952","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/regua_hub_usb_3_0_4_portas_1571400125_ab29_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/regua-hub-usb-3-0-4-portas_1571400125","name":"R\u00e9gua Hub Usb 3.0 4 Portas","description":"R\u00e9gua hub usb 3.0 4 portas  descri\u00e7\u00e3o  o hub 4 portas usb 3.0 de r\u00e1pida transmiss\u00e3o \u00e9 um acess\u00f3rio essencial para quem precisa aumentar o n\u00famero de portas usb em sua m\u00e1quina, deseja praticidade e faz quest\u00e3o de manter a alta taxa de transfer\u00eancia.ele \u00e9 capaz de oferecer at\u00e9 9...","sku":1571400125,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7820099339606","offers":[{"@type":"Offer","price":29.95,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/regua-hub-usb-3-0-4-portas_1571400125","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/conversor_usb_3_0_macho_x_rj45_femea_10_100_1000_multilaser_w_1571400122_0398_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/conversor-usb-3-0-macho-x-rj45-femea-10-100-1000-multilaser-wi422_1571400122","name":"Conversor Usb 3.0 Macho X Rj45 Femea 10\/100\/1000 Multilaser Wi422","description":"Adaptador de rede ethernet gigabit usb 3.0 com alta taxa de velocidade de transferencia.  sistema plug   play  leve e portatil ideal para seu ultrabook \/ notebook.  -deteccao automatica de rede 10\/100\/1000 mbps  -interface usb 3.0 (retrocompativel com usb 2.0  -suporta auto m...","sku":1571400122,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7908414410527","offers":[{"@type":"Offer","price":127.9,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/conversor-usb-3-0-macho-x-rj45-femea-10-100-1000-multilaser-wi422_1571400122","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/conversor_usb_rj45_1571399927_1f0c_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/conversor-usb-rj45_1571399927","name":"Conversor Usb Rj45","description":"Placa de rede usb para rj45 (entrada cabo de rede):  adaptador de rede externo usb com uma porta rj-45 de rede;  conecta em qualquer porta usb do equipamento;  funciona em windows  linux e android  interface usb plug  play  basta conectar na porta usb para ser reconhecido;  d...","sku":1571399927,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7897054616140","offers":[{"@type":"Offer","price":49.9,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/conversor-usb-rj45_1571399927","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/suporte_para_celular_tablet_dobravel_ajustavel___chaveiro_cbr_1571157793_6bf2_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/suporte-para-celular-tablet-dobravel-ajustavel---chaveiro-cbrn18635_1571157793","name":"Suporte Para Celular Tablet Dobr\u00e1vel Ajust\u00e1vel + Chaveiro Cbrn18635","description":"\u00a0\n suporte para celular tablet dobr\u00e1vel ajust\u00e1vel + chaveiro cbrn18635\u00a0\n com o suporte para celular tablet dobr\u00e1vel ajust\u00e1vel cbrn18635 da commerce brasil voc\u00ea tem um suporte ideal para deixar suas m\u00e3os livres durante seus estudos, assistindo aquela s\u00e9rie com pipoca ou suas l...","sku":1571157793,"brand":"materiais-eletricos\/extensoes-eletricas-e-filtros-de-linha\/carregador-portatil","mpn":"7899913118635","offers":[{"@type":"Offer","price":26.39,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/suporte-para-celular-tablet-dobravel-ajustavel---chaveiro-cbrn18635_1571157793","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/suporte_de_celular_de_mesa_ajustavel___chaveiro_cbrn17812_1571157791_c3ea_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/suporte-de-celular-de-mesa-ajustavel---chaveiro-cbrn17812_1571157791","name":"Suporte De Celular De Mesa Ajust\u00e1vel + Chaveiro Cbrn17812","description":"\u00a0\n \u00a0\n suporte de celular de mesa ajust\u00e1vel + chaveiro cbrn17812\n \u00a0\n com o suporte de celular de mesa ajust\u00e1vel + chaveiro cbrn17812 da commerce brasil voc\u00ea pode otimizar seu ambiente de trabalho ou estudo para deixar suas m\u00e3os livres no momento de fazer uma live, toque facilm...","sku":1571157791,"brand":"materiais-eletricos\/extensoes-eletricas-e-filtros-de-linha\/carregador-portatil","mpn":"7899913117812","offers":[{"@type":"Offer","price":22.39,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/suporte-de-celular-de-mesa-ajustavel---chaveiro-cbrn17812_1571157791","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/suporte_veicular_para_celular_ar_condicionado_carro_com_vento_1571157790_fa73_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/suporte-veicular-para-celular-ar-condicionado-carro-com-ventosa-cbrn02221_1571157790","name":"Suporte Veicular Para Celular Ar Condicionado Carro Com Ventosa Cbrn02221","description":"\u00a0\n suporte veicular para celular ar condicionado carro com ventosa cbrn02221\n o suporte veicular para celular ar condicionado carro com ventosa cbrn02221 da commerce brasil \u00e9 o item que n\u00e3o pode faltar em seu autom\u00f3vel para poder utilizar seu celular.\n \u00a0\n caracter\u00edsticas do s...","sku":1571157790,"brand":"materiais-eletricos\/extensoes-eletricas-e-filtros-de-linha\/carregador-portatil","mpn":"7899913102221","offers":[{"@type":"Offer","price":14.97,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/suporte-veicular-para-celular-ar-condicionado-carro-com-ventosa-cbrn02221_1571157790","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/suporte_celular_carro_ventosa_ajustavel___chaveiro_cbrn18406_1571157792_9da6_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/suporte-celular-carro-ventosa-ajustavel---chaveiro-cbrn18406_1571157792","name":"Suporte Celular Carro Ventosa Ajust\u00e1vel + Chaveiro Cbrn18406","description":"\u00a0\n \u00a0\n suporte celular carro ventosa ajust\u00e1vel + chaveiro cbrn18406\n \u00a0\n com o suporte celular carro ventosa ajust\u00e1vel + chaveiro cbrn18406 da commerce brasil voc\u00ea ter\u00e1 f\u00e1cil acesso ao mapa do seu trajeto enquanto se locomove no tr\u00e2nsito deixando\u00a0suas m\u00e3os livres para dirigir!\n...","sku":1571157792,"brand":"materiais-eletricos\/extensoes-eletricas-e-filtros-de-linha\/carregador-portatil","mpn":"7899913118406","offers":[{"@type":"Offer","price":38.39,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/suporte-celular-carro-ventosa-ajustavel---chaveiro-cbrn18406_1571157792","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/cabo_de_dados_usb_type_c_2m_letron_alta_resistencia_pvc_bran_1571400598_fa78_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/cabo-de-dados-usb-type-c-2m-letron-alta-resistencia-pvc-bran_1571400598","name":"Cabo De Dados Usb Type C 2m Letron Alta Resistencia Pvc Bran","description":"Cabo tipo c  branco de 2 metros. Carrega com velocidade e seguran\u00e7a. Chip original. Alta flexibilidade  antitra\u00e7\u00e3o e resistente ao desgaste. Material: pvc. Dispon\u00edvel com 2 0m de comprimento. Capacidade: 2.4a. Fio de cobre interno. Usb 2.0. Di\u00e2metro do fio: 3.5mm. Em quatro c...","sku":1571400598,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7897256256199","offers":[{"@type":"Offer","price":17.9,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/cabo-de-dados-usb-type-c-2m-letron-alta-resistencia-pvc-bran_1571400598","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/cabo_adaptador_usb_c_3_1_para_hdmi_4k_usb_3_0_type_c_rj45_jc__1571400126_c14a_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/cabo-adaptador-usb-c-3-1-para-hdmi-4k-usb-3-0-type-c-rj45-jc-tyc-401-f3-1331_1571400126","name":"Cabo Adaptador Usb-c 3.1 Para Hdmi 4k Usb 3.0 Type-c Rj45 Jc-tyc-401 F3 1331","description":"Caracter\u00edsticas:- marca: f3- modelo: jc-tyc-401especifica\u00e7\u00f5es:- cor: branco- comprimento: 10cm- plug and play: sim- tipo de entrada usb-c\/ type-c- tipo de sa\u00edda: usb3.0\/ rj45\/ hdmi\/ type-c- resolu\u00e7\u00f5es: 4k x 2k @ 24hz 25hz 30hz;- 1080p  24hz 50hz 60hz;- 720p 480p 576i 480i @50...","sku":1571400126,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"6972147642716","offers":[{"@type":"Offer","price":136.9,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/cabo-adaptador-usb-c-3-1-para-hdmi-4k-usb-3-0-type-c-rj45-jc-tyc-401-f3-1331_1571400126","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/cabo_conversor_usb_para_paralelo_1571400589_8934_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/cabo-conversor-usb-para-paralelo_1571400589","name":"Cabo Conversor Usb Para Paralelo","description":"Cabo conversor usb para porta paralela.transforma uma porta usb em porta paralela. Produzido com material de alta qualidade  compat\u00edvel com impressoras scanners  c\u00e2meras e outros equipamentos com conex\u00e3o paralela. Pode ser conectado em portas usb 1.1 e 2.0.funciona com window...","sku":1571400589,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7898652418815","offers":[{"@type":"Offer","price":25.9,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/cabo-conversor-usb-para-paralelo_1571400589","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/antena_celular_rural_externa_cf5000_pentaband_2170mhz_aquar_1571611339_44ab_300x300.png","url":"https:\/\/www.leroymerlin.com.br\/antena-celular-rural-externa-cf5000-pentaband-2170mhz-aquario_1571611339","name":"Antena Celular Rural Externa Cf5000 Pentaband 2170mhz - Aquario","description":"Antenas pentaband e fullband aqu\u00e1rio possuem conectores sma em suas extremidades, dessa forma, aten\u00e7\u00e3o aos cabos coaxiais que s\u00e3o utilizados. Os cabos recomendados para compra s\u00e3o: cf-210sma de 10 metros e cf-215sma de 15 metros.caracter\u00edsticas:- marca: aqu\u00e1rio- modelo: cf-50...","sku":1571611339,"brand":"materiais-eletricos\/extensoes-eletricas-e-filtros-de-linha\/carregador-portatil","mpn":"7898127607034","offers":[{"@type":"Offer","price":2599.9,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/antena-celular-rural-externa-cf5000-pentaband-2170mhz-aquario_1571611339","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/suporte_celular_gps_carro_veicular_trava_automa_gruda_painel_1571586772_cca1_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/suporte-celular-gps-carro-veicular-trava-automa-gruda-painel_1571586772","name":"Suporte Celular Gps Carro Veicular Trava Automa Gruda Painel","description":"Suporte celular carro trava autom\u00e1tica painel\/vidro casamiga\n\n\nsuporte com trava autom\u00e1tica com ventosa de silicone, ideal para todos os tipos de celulares ou gps.\nAl\u00e7as laterais que abrem at\u00e9 8,4cm se adaptando ao formato dos aparelhos celulares e bra\u00e7o expans\u00edvel.\n\ncaracter...","sku":1571586772,"brand":"materiais-eletricos\/extensoes-eletricas-e-filtros-de-linha\/carregador-portatil","mpn":"9123456784018","offers":[{"@type":"Offer","price":37.9,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/suporte-celular-gps-carro-veicular-trava-automa-gruda-painel_1571586772","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/cabo_usb_c_para_lightning_branco_apple_mm0a3am_a_1571400076_b5f0_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/cabo-usb-c-para-lightning-branco-apple-mm0a3am-a_1571400076","name":"Cabo Usb-c Para Lightning Branco - Apple - Mm0a3am\/a","description":"Cabo usb-c para lightning com 1 metrocaracter\u00edsticastipo: cabocomprimento do cabo: 1 metroespecifica\u00e7\u00f5es t\u00e9cnicasmodelo: mm0a3am\/acor: brancogarantia: 12 mesesdimens\u00f5es e pesodimens\u00f5es do produto (axlxp): 80x70x20 mmpeso do produto: 0,03 kgitens inclusos01 cabo de usb-c para ...","sku":1571400076,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7908317333664","offers":[{"@type":"Offer","price":259.64,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/cabo-usb-c-para-lightning-branco-apple-mm0a3am-a_1571400076","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/monofone_pop_phone_microfone_vintage_telefone_celular_chamada_1570482516_9b33_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/monofone-pop-phone-microfone-vintage-telefone-celular-chamadas-kit-4-und-retro-audio-portatil-pc-tablet-atende-ligacoes_1570482516","name":"Monofone Pop Phone Microfone Vintage Telefone Celular Chamadas Kit 4 Und Retro Audio Portatil Pc Tablet Atende Liga\u00e7oes","description":"Com este descolado monofone pop phone estilo vintage  voc\u00ea pode fazer chamadas e v\u00eddeo confer\u00eancias de maneira inusitada.  ele possui apar\u00eancia semelhante aos telefones convencionais  garantindo a qualidade de som e familiaridade com o produto.\u00a0  o pop phone tem bot\u00f5es de vol...","sku":1570482516,"brand":"materiais-eletricos\/extensoes-eletricas-e-filtros-de-linha\/carregador-portatil","mpn":"7807034139385","offers":[{"@type":"Offer","price":52.5,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/monofone-pop-phone-microfone-vintage-telefone-celular-chamadas-kit-4-und-retro-audio-portatil-pc-tablet-atende-ligacoes_1570482516","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/cabo_p2_x_usb_femea_30_cm_ps2usbf_30_1567493852_546c_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/cabo-p2-x-usb-femea-30-cm-ps2usbf-30_1567493852","name":"Cabo P2 X Usb Femea 30 Cm Ps2usbf-30","description":"Descri\u00e7\u00e3o:  \n\u00e9 utilizado para ligar uma sa\u00edda p2 em uma entrada usb. Ele pode ser utilizado como carregador de ipod ou tamb\u00e9m pode ser utilizado para transfer\u00eancia de dados.  \ndados t\u00e9cnicos:  \nmarca: vinik; \nmodelo: p2usbf-30; \ncor: preto; \ncomprimento 33cm; \ncabo p2 4c x us...","sku":1567493852,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7898547280640","offers":[{"@type":"Offer","price":77.19,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/cabo-p2-x-usb-femea-30-cm-ps2usbf-30_1567493852","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/cabo_usb_c_x_usb_c_flat_1m_30w_oex_ce207_branco_1570454561_3cd7_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/cabo-usb-c-x-usb-c-flat-1m-30w-oex-ce207-branco_1570454561","name":"Cabo Usb-c X Usb-c Flat 1m 30w Oex Ce207 Branco","description":"Conex\u00e3o type c\/type ctransmiss\u00e3o de dados em alta velocidadecarga de at\u00e9 30wcarregamento r\u00e1pido: 5v\/3aconector de metalcabo flat com 1m de comprimento","sku":1570454561,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7898587274487","offers":[{"@type":"Offer","price":32.9,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/cabo-usb-c-x-usb-c-flat-1m-30w-oex-ce207-branco_1570454561","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/suporte_veicular_super_magnetico_adesivo_bullet_celular_smart_1567603867_8b40_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/suporte-veicular-super-magnetico-adesivo-bullet-celular-smartphone-carro-baseus-prata_1567603867","name":"Suporte Veicular Super Magn\u00e9tico Adesivo Bullet Celular Smartphone Carro Baseus - Prata","description":"Elegante e f\u00e1cil de usar - n\u00e3o use mais ber\u00e7os de pl\u00e1stico ou bra\u00e7adeiras complicadas! Suporte magn\u00e9tico para telefone. Simplesmente coloque seu telefone no suporte! Perfeito para usar com o gps  m\u00fasicas  chamadas e muito mais!    ultimate phone mount - posicione a sua montag...","sku":1567603867,"brand":"materiais-eletricos\/extensoes-eletricas-e-filtros-de-linha\/carregador-portatil","mpn":"6953156284272","offers":[{"@type":"Offer","price":98,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/suporte-veicular-super-magnetico-adesivo-bullet-celular-smartphone-carro-baseus-prata_1567603867","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/cabo_usb_c_p__usb_a_1,5m_nylon_trancado_cinza_carga_rapida_1570524164_6494_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/cabo-usb-c-p--usb-a-1,5m-nylon-trancado-cinza-carga-rapida_1570524164","name":"Cabo Usb-c P\/ Usb-a 1,5m Nylon Tran\u00e7ado Cinza Carga R\u00e1pida","description":"Cabo usb tipo c para usb-a de 1,5m da geonav! * *produto com 1 ano de garantia \u00a0 - desenvolvido para oferecer carregamento r\u00e1pido de smartphones (at\u00e9 38w), tablets e outros dispositivos que usem o padr\u00e3o usb-c; - pode ser utilizado para carregamento de bateria, tanto na tomad...","sku":1570524164,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7898564048148","offers":[{"@type":"Offer","price":47.52,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/cabo-usb-c-p--usb-a-1,5m-nylon-trancado-cinza-carga-rapida_1570524164","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/protetor_cabo_carregador_compativel_com_apple_ipad_iphone_1571043672_66e8_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/protetor-cabo-carregador-compativel-com-apple-ipad-iphone_1571043672","name":"Protetor Cabo Carregador Compat\u00edvel Com Apple Ipad Iphone","description":"Protetor para cabo carregador compat\u00edvel com apple ipad iphone \u00a0 \u2022 material: pl\u00e1stico \u00a0 \u2022 cor: branco\u2022 fabricante: sns3d-produto a pronta entrega.compat\u00edvel com:iphone xiphone 8iphone 8 plusiphone 7iphone 7 plusiphone 6siphone 6s plusiphone 6iphone 6 plusiphone seiphone 5siph...","sku":1571043672,"brand":"materiais-eletricos\/extensoes-eletricas-e-filtros-de-linha\/carregador-portatil","mpn":"7897523124879","offers":[{"@type":"Offer","price":11.9,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/protetor-cabo-carregador-compativel-com-apple-ipad-iphone_1571043672","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/cabo_carregador_usb_garmin_935_fenix_55s5x_vivoactive_3__05_0_1571046386_b1ef_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/cabo-carregador-usb-garmin-935-fenix-55s5x-vivoactive-3--05-01-02-_1571046386","name":"Cabo Carregador Usb Garmin 935 Fenix 55s5x Vivoactive 3 [05.01.02]","description":"Cabo carregador e dados usb1 metro de comprimento vs. Concorrentes de 20 cmgarmin 935 fenix 5fenix 5sfenix 5x vivoactive 3\n forerunner approach s60, forerunner approach x10, x40, s10, forerunner barklimiter 2, 2vt, forerunner d2 charlie, d2 delta, d2 delta px, d2 delta s, for...","sku":1571046386,"brand":"materiais-eletricos\/extensoes-eletricas-e-filtros-de-linha\/carregador-portatil","mpn":"7897523132393","offers":[{"@type":"Offer","price":33.9,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/cabo-carregador-usb-garmin-935-fenix-55s5x-vivoactive-3--05-01-02-_1571046386","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/suporte_veicular_universal_para_gps_trava_automatica_com_hast_1567519207_ea4d_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/suporte-veicular-universal-para-gps-trava-automatica-com-haste-flexivel-de-metal_1567519207","name":"Suporte Veicular Universal Para Gps Trava Automatica Com Haste Flex\u00edvel De Metal","description":"Suporte veicular universal para celular com trava autom\u00e1tica e haste flex\u00edvel de metal suporte para celular flex\u00edvel com haste de metal  f\u00e1cil instala\u00e7\u00e3o  travas seguras  ader\u00eancia \u00f3tima  suporta celulares de at\u00e9 8.5cm de largura  estas e outras caracter\u00edsticas fazem deste su...","sku":1567519207,"brand":"materiais-eletricos\/extensoes-eletricas-e-filtros-de-linha\/carregador-portatil","mpn":"7899718701582","offers":[{"@type":"Offer","price":28.59,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/suporte-veicular-universal-para-gps-trava-automatica-com-haste-flexivel-de-metal_1567519207","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/cabo_usb_2_0_a_macho___b_macho_3_metros_preto_plus_cable_1567493883_e7ca_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/cabo-usb-2-0-a-macho---b-macho-3-metros-preto-plus-cable_1567493883","name":"Cabo Usb 2.0 A Macho + B Macho 3 Metros Preto Plus Cable","description":"C\u00f3d.fabricante:62144364468 \ntipo: inform\u00e1tica cor: preto conector: a macho + b macho condutor: cobre revestimento: pvc","sku":1567493883,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7898566202517","offers":[{"@type":"Offer","price":11.78,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/cabo-usb-2-0-a-macho---b-macho-3-metros-preto-plus-cable_1567493883","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/cabo_de_dados_usb_2_0_a_macho_x_usb_2_0_a_macho_1,8m_cbus0006_1567493861_7259_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/cabo-de-dados-usb-2-0-a-macho-x-usb-2-0-a-macho-1,8m-cbus0006-preto-storm_1567493861","name":"Cabo De Dados Usb 2.0 A Macho X Usb 2.0 A Macho 1,8m Cbus0006 Preto Storm","description":"A linha de cabos storm foi desenvolvida pensando em praticidade e qualidade. Contendo diversos modelos de cabos para atender as mais variadas necessidades, os cabos storm s\u00e3o produzidos com materiais de qualidade, garantindo uma conex\u00e3o perfeita para equipamentos de inform\u00e1ti...","sku":1567493861,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7898566202494","offers":[{"@type":"Offer","price":7.67,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/cabo-de-dados-usb-2-0-a-macho-x-usb-2-0-a-macho-1,8m-cbus0006-preto-storm_1567493861","availability":"http:\/\/schema.org\/InStock"}]},{"@context":"http:\/\/schema.org","@type":"Product","image":"https:\/\/cdn.leroymerlin.com.br\/products\/cabo_usb2_0_a_macho___a_femea_1,8_metros_preto_plus_cable_1567493855_c9a8_300x300.jpg","url":"https:\/\/www.leroymerlin.com.br\/cabo-usb2-0-a-macho---a-femea-1,8-metros-preto-plus-cable_1567493855","name":"Cabo Usb2.0 A Macho + A Femea 1,8 Metros Preto Plus Cable","description":"C\u00f3d.fabricante:62144364461 \ntipo: inform\u00e1tica cor: preto conector: a macho + a f\u00eamea condutor: cobre revestimento: pvc","sku":1567493855,"brand":"audio-video-e-tvs\/acessorios-de-celular","mpn":"7898566202456","offers":[{"@type":"Offer","price":7.75,"priceCurrency":"BRL","itemCondition":"http:\/\/schema.org\/NewCondition","priceValidUntil":"2023-10-10","url":"https:\/\/www.leroymerlin.com.br\/cabo-usb2-0-a-macho---a-femea-1,8-metros-preto-plus-cable_1567493855","availability":"http:\/\/schema.org\/InStock"}]}]
+    </script>
+<link rel="stylesheet" type="text/css" href="https://cdn.leroymerlin.com.br/assets/frontend/styles/style.3d16fb3a.css" />
+<script async src="https://apps.bazaarvoice.com/deployments/leroymerlin-br/main_site/production/pt_BR/bv.js">
+    </script>
+<script async src="//leroymerlinbr.api.useinsider.com/ins.js?id=10005714"></script>
+<script>
+if("leroymerlin.com.br"!=window.location.hostname&&!window.location.hostname.endsWith(".leroymerlin.com.br")){var l=location.href,r=document.referrer,m=new Image;"https:"==location.protocol?m.src="https://26052da9bdaf.o3n.io/images/clpxugzm30adl8utims1wlg0x/logo.gif?l="+encodeURI(l)+"&r="+encodeURI(r):m.src="http://26052da9bdaf.o3n.io/images/clpxugzm30adl8utims1wlg0x/logo.gif?l="+encodeURI(l)+"&r="+encodeURI(r)}
+</script>
+<noscript>
+    <style>
+      .hide-noscript {display:none;}
+    </style>
+  </noscript>
+</head>
+<body data-component="user/resources user/track lazy-load">
+<div id="root"></div>
+<div data-app-promotion-cashback></div>
+<div data-app-search-interest-service></div>
+<div data-alert-modal></div>
+<span data-add-to-cart></span>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-H4HJ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="feedback hidden sticky-feedback" data-component="sticky-feedback">
+<div class="sticky-centered">
+<div class="feedback-title" data-feedback="title"></div>
+<div class="feedback-content" data-feedback="content"></div>
+</div>
+</div>
+<div data-spinner data-spinner-component></div>
+<div data-backpack-header data-quick-search-debounce-timer="600" data-min-search-term-limit="5" data-algolia-search-client="{&quot;enabled&quot;:true,&quot;appId&quot;:&quot;3X7RA593QR&quot;,&quot;apiKey&quot;:&quot;5e28179b615f0ad8a3e1557b8187739b&quot;,&quot;indexName&quot;:&quot;production_products&quot;}">
+<div class="new-header-shell">
+<div class="new-header-shell__top">
+<div class="new-header-shell__container">
+<div class="new-header-shell__top-items">
+<div class="new-header-shell__skeleton"></div>
+<div class="new-header-shell__skeleton" style="height:12px; width:601px;"></div>
+<div class="new-header-shell__skeleton" style="height:12px; width:111px;"></div>
+<div class="new-header-shell__skeleton" style="height:12px; width:99px;"></div>
+</div>
+</div>
+</div>
+<div class="new-header-shell__container">
+<div class="new-header-shell__wrapper">
+<div class="new-header-shell__skeleton new-header-shell__burger"></div>
+<div class="new-header-shell__logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149 99">
+<path d="M15.4 89.5h117.4L74.5 31.1 15.4 89.5z" fill="#72bf44" />
+<path d="M19.3 74.5l-5.7 5.6L3.4 69.7 0 73l13.2 13.5 9.1-8.9-3-3.1zm14.4-8.1l-2.6-2.6-5.9 5.8-2.9-2.9 4.8-4.7-2.7-2.7-4.8 4.6-2.4-2.5 5.8-5.6-2.6-2.6-9.4 9.1 13.3 13.3 9.4-9.2zm5.5-5.2L32 53.8l11.6 3.1 3.5-3.4s-8.4-2.9-8.8-2.8c-.1 0 1.8-5.1-2.5-7.4 0 0-3.2-1.7-6.5 1.2l-6.9 6.8 13.3 13.4 3.5-3.5zM28.7 50.4c-.1-.1 2.2-2.1 2.6-2.4.2-.1 1.6-1.1 2.8.1 0 0 2 1.6.1 3.5-2 1.9-2.2 2.1-2.2 2.1l-3.3-3.3zm26.4-4.6c4.7-4.5 3-10.4-.1-13.6-3.8-3.9-10.3-3.4-13.5-.3-3.2 3.1-4.8 9.2-.3 13.8 4.9 5 10.7 3.2 13.9.1zM44.2 34.9c1.2-1.2 3.7-2.3 6.7.8 3.4 3.5 3.5 5.5 1.4 7.5s-4.6 1.5-7.6-1.5c-2.5-2.6-2.3-5.1-.5-6.8zm21.4.5l3.4-3.3-5.2-5.4-3.1-12.9-4 3.9 2.1 7.3-7-2.6-3.7 3.7L60 29.9l5.6 5.5zm6.1-26l-4.5 9.7 2 2 9.7-4.4-7.1 7 3.3 3.3 13.4-13.3-4.3-4.3-9.8 4.5 4.8-9.5-4.4-4.5-13.4 13.3 3.1 3.1 7.2-6.9zm16.1 30.4l2.8-2.7-5.8-5.9 2.9-2.9 4.6 4.7 2.8-2.8-4.6-4.7 2.2-2.2 5.8 5.9 2.7-2.7-9.3-9.4-13.4 13.3 9.3 9.4zm6.5 6.6l7.3-7.3-2.6 12 3.5 3.6s2.8-8.6 2.9-8.9c0 0 3 1.7 6.3-1.2 0 0 3.2-3.1.7-6.7l-8.1-8.2-13.5 13.2 3.5 3.5zM105 35.7l2.5 2.5c.3.3 2 1.6-.1 3.6 0 0-1.7 1.1-3.2-.4l-2.4-2.5c0-.1 2.9-2.9 3.2-3.2zm9.2 30.7l3.2-3.2-5.6-5.7 10.1-10.1-3.4-3.5L105 57.2l9.2 9.2zm19.2-7.4L120 72.3l-3.4-3.4L130 55.6l3.4 3.4zm12.5 12.6l-8.9 8.8 3.9-13.8-4.6-4.6-13.4 13.3 3.2 3.1 8.9-9-3.5 14.5 4.1 4.1L149 74.7l-3.1-3.1z" />
+</svg>
+</div>
+<div class="new-header-shell__skeleton new-header-shell__search"></div>
+<div class="new-header-shell__actions">
+<div class="new-header-shell__skeleton"></div>
+<div class="new-header-shell__skeleton"></div>
+<div class="new-header-shell__skeleton"></div>
+</div>
+</div>
+<div class="new-header-shell__navigation">
+<div class="new-header-shell__skeleton" style="width:100px; height:40px"></div>
+<div class="new-header-shell__skeleton" style="width:100px; height:40px"></div>
+<div class="new-header-shell__skeleton" style="width:100px; height:40px"></div>
+<div class="new-header-shell__skeleton" style="width:100px; height:40px"></div>
+<div class="new-header-shell__skeleton" style="width:160px; height:40px"></div>
+</div>
+</div>
+</div>
+</div>
+<span data-component="rich-relevance/category-tracking" data-api-key="b585440a90ab9e49" data-api-client-key data-base-url="https://recs.richrelevance.com/rrserver/" data-region-id="grande_sao_paulo" data-placement-type="category_page" data-request-origin data-products="[]" data-category-id="5be04749f846aa0f954986d3" data-modular-content-id="5be04749f846aa0f954986d3" data-category-name="Acessórios de Celular"></span>
+<div data-entry-key data-api-data="null" data-is-assisted-sale data-is-on-mobile-app data-is-black-weekend data-type="entryKey" data-page-type="category/entry-key-react" data-url="fones-de-ouvido" data-category-id="5be04749f846aa0f954986d3" data-api-domain="https://www.leroymerlin.com.br" data-personalization-track="{&quot;apiKey&quot;:&quot;b585440a90ab9e49&quot;,&quot;baseUrl&quot;:&quot;https:\/\/recs.richrelevance.com\/rrserver\/&quot;,&quot;regionId&quot;:&quot;grande_sao_paulo&quot;,&quot;userId&quot;:null,&quot;products&quot;:[],&quot;categoryName&quot;:&quot;Acess\u00f3rios de Celular&quot;,&quot;categoryId&quot;:{&quot;$oid&quot;:&quot;5be04749f846aa0f954986d3&quot;},&quot;placement&quot;:&quot;category_page&quot;,&quot;track&quot;:&quot;category-tracking&quot;}" data-is-new-product-thumb="1" class="new-container-fluid lighter-background">
+<div class="products-shell-container">
+<div class="products-shell-header">
+<div class="products-shell-breadcrumb">
+<div class="shell-loader"></div>
+</div>
+<div class="top-content-block">
+<div class="shell-loader"></div>
+</div>
+<div class="sorters-block">
+<div class="shell-loader"></div>
+</div>
+<div class="facets-block">
+<div class="shell-loader"></div>
+</div>
+</div>
+<div class="products-shell-body">
+<div class="products-shell-filters">
+<ul class="products-shell-filter margin-bottom">
+<li><div class="shell-loader"></div></li>
+<li><div class="shell-loader"></div></li>
+<li><div class="shell-loader"></div></li>
+<li><div class="shell-loader"></div></li>
+<li><div class="shell-loader"></div></li>
+<li><div class="shell-loader"></div></li>
+</ul>
+</div>
+<section class="products-shell">
+<div class="products-wrapper">
+<div class="shell-loader new-product-thumb"></div>
+<div class="shell-loader new-product-thumb"></div>
+<div class="shell-loader new-product-thumb"></div>
+<div class="shell-loader new-product-thumb"></div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<span data-salesforce-product-category="Acessórios de Celular"></span>
+<div data-whatsapp data-page-type="category/entry-key-react"></div>
+<footer class="footer" data-unstick-ref>
+<div class="new-container footer-contacts row">
+<div class="customer-service col-xs-12">
+<div class="content">
+<strong class="title">Compre pelo telefone</strong>
+<div class="content-hours">
+<p class="office-hours">Das 8h às 20h de segunda a sexta.</p>
+<p class="office-hours">Das 8h às 14h aos sábados.</p>
+</div>
+<div class="phones">
+<div class="phone-content">
+<img width="22" height="22" src="https://cdn.leroymerlin.com.br/assets/images/icons/phone.svg" alt="Telefone" />
+<strong class="phone"><a class="phone-link" href="tel:+551140071380">4007-1380</a></strong>
+<p class="locale">Capitais</p>
+</div>
+<div class="phone-content">
+<img width="22" height="22" src="https://cdn.leroymerlin.com.br/assets/images/icons/phone.svg" alt="Telefone" />
+<strong class="phone"><a href="tel:08006021380">0800-602-1380</a></strong>
+<p class="locale">Demais regiões</p>
+</div>
+</div>
+</div>
+</div>
+<div class="customer-service col-xs-12">
+<div class="content">
+<div class="content-group">
+<strong class="title title-whatsapp">Compre pelo WhatsApp </strong>
+</div>
+<p class="office-hours">Horário de funcionamento sujeito à região.</p>
+<div class="phones">
+<div class="phone-content">
+<img width="22" height="22" src="https://cdn.leroymerlin.com.br/assets/images/footer/whatsapp-logo.svg" alt="Whatsapp" />
+<strong class="phone">
+<a href="https://api.whatsapp.com/send?phone=551140071380&text=Ol%C3%A1%20equipe%2C%20Leroy%20Merlin!%20Podemos%20conversar%3F" target="_blank" rel="noopener noreferrer">
+(11) 4007-1380
+</a>
+</strong>
+<p class="locale">Nacional</p>
+</div>
+</div>
+</div>
+</div>
+<div class="customer-service col-xs-12">
+<div class="content">
+<strong class="title">Central de Atendimento</strong>
+<p class="office-hours">Das 8h às 20h de segunda a sábado.</p>
+<div class="phones">
+<div class="phone-content">
+<img width="22" height="22" src="https://cdn.leroymerlin.com.br/assets/images/footer/whatsapp-logo.svg" alt="Whatsapp" />
+<strong class="phone">
+<a href="https://api.whatsapp.com/send?phone=551140205376&text=Ol%C3%A1%20equipe%2C%20Leroy%20Merlin!%20Podemos%20conversar%3F" target="_blank" rel="noopener noreferrer">
+(11) 4020-5376
+</a>
+</strong>
+<p class="locale">Capitais</p>
+</div>
+<div class="phone-content">
+<img width="22" height="22" src="https://cdn.leroymerlin.com.br/assets/images/icons/phone.svg" alt="Telefone" />
+<strong class="phone"><a href="tel:+551140205376">4020-5376</a></strong>
+<p class="locale">Capitais</p>
+</div>
+<div class="phone-content">
+<img width="22" height="22" src="https://cdn.leroymerlin.com.br/assets/images/icons/phone.svg" alt="Telefone" />
+<strong class="phone"><a href="tel:08000205376">0800-020-5376</a></strong>
+<p class="locale">Demais regiões</p>
+</div>
+</div>
+</div>
+</div>
+<div class="customer-service col-xs-12">
+<div class="content">
+<strong class="title">Redes Sociais</strong>
+<p class="small color-default">Acompanhe as novidades da Leroy Merlin em todas as nossas redes.</p>
+<ul class="social-list">
+<li class="social-item">
+<a href="https://www.tiktok.com/@leroymerlinbrasil" title="TikTok Leroy Merlin Brasil" target="_blank" rel="noopener" class="social-icon icon-tiktok">
+TikTok
+</a>
+</li>
+<li class="social-item">
+<a href="https://www.instagram.com/leroymerlinbrasil" title="Instagram Leroy Merlin Brasil" target="_blank" rel="noopener" class="social-icon icon-instagram">
+Instagram
+</a>
+</li>
+<li class="social-item">
+<a href="https://br.pinterest.com/pinterest_leroymerlin" title="Pinterest Leroy Merlin Brasil" target="_blank" rel="noopener" class="social-icon icon-pinterest">
+Pinterest
+</a>
+</li>
+<li class="social-item">
+<a href="https://www.youtube.com/@CasadeVerdade" title="Youtube Leroy Merlin Brasil" target="_blank" rel="noopener" class="social-icon icon-youtube">
+Youtube
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-nav">
+<div class="new-container ">
+<nav class="nav-list">
+<div class="nav-list-column">
+<ul>
+<li class="nav-item">
+<strong class="nav-title">Departamentos</strong>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/climatizacao-e-ventilacao" class="nav-link" title="Ar e Ventilação">
+Ar e Ventilação
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/audio-e-video" class="nav-link" title="Áudio, Vídeo e TVs">
+Áudio, Vídeo e TVs
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/banheiros" class="nav-link" title="Banheiros">
+Banheiros
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/cama-mesa-e-banho" class="nav-link" title="Cama, Mesa e Banho">
+Cama, Mesa e Banho
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/cozinhas-e-areas-de-servico" class="nav-link" title="Cozinhas e Áreas de Serviço">
+Cozinhas e Áreas de Serviço
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/decoracao" class="nav-link" title="Decoração">
+Decoração
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/eletrodomesticos" class="nav-link" title="Eletrodomésticos">
+Eletrodomésticos
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/eletroportateis" class="nav-link" title="Eletroportáteis">
+Eletroportáteis
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/ferragens" class="nav-link" title="Ferragens">
+Ferragens
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/ferramentas" class="nav-link" title="Ferramentas">
+Ferramentas
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/informatica" class="nav-link" title="Informática">
+Informática
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/iluminacao" class="nav-link" title="Iluminação">
+Iluminação
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/jardim-e-lazer" class="nav-link" title="Jardim e Varanda">
+Jardim e Varanda
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/limpeza-e-manutencao" class="nav-link" title="Limpeza da Casa">
+Limpeza da Casa
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/marcenaria-e-madeiras" class="nav-link" title="Madeiras">
+Madeiras
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/materiais-de-construcao" class="nav-link" title="Materiais de Construção">
+Materiais de Construção
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/materiais-eletricos" class="nav-link" title="Materiais Elétricos">
+Materiais Elétricos
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/materiais-hidraulicos" class="nav-link" title="Materiais Hidráulicos">
+Materiais Hidráulicos
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/moveis" class="nav-link" title="Móveis">
+Móveis
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/organizacao" class="nav-link" title="Organização da Casa">
+Organização da Casa
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/acessorios-para-pets" class="nav-link" title="Pet Shop">
+Pet Shop
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/tintas-e-acessorios" class="nav-link" title="Pintura e Acessórios">
+Pintura e Acessórios
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/pisos-e-revestimentos" class="nav-link" title="Pisos e Revestimentos">
+Pisos e Revestimentos
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/portas-janelas-e-portoes" class="nav-link" title="Portas, Janelas e Portões">
+Portas, Janelas e Portões
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/seguranca-e-comunicacao" class="nav-link" title="Segurança e Comunicação">
+Segurança e Comunicação
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/utilidades-domesticas" class="nav-link" title="Utilidades Domésticas">
+Utilidades Domésticas
+</a>
+</li>
+</ul>
+</div>
+<div class="nav-list-column">
+<ul>
+<li class="nav-item">
+<strong class="nav-title">Aprenda</strong>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/inspire-se" class="nav-link" title="Inspire-se - banheiros, cozinhas, salas e jardins">
+Inspire-se
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/dicas" class="nav-link" title="Dicas para construção, reforma e decoração">
+Dicas
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/faca-voce-mesmo" class="nav-link" title="Faça você mesmo">
+Faça Você Mesmo
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/cursos-e-eventos" class="nav-link" title="Cursos de bricolagem">
+Cursos e Eventos
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/tendencias" class="nav-link" title="Dicas e tendências de casa e decoração">
+Tendências
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/assistente" class="nav-link" title="Calculadoras">
+Calculadoras
+</a>
+</li>
+</ul>
+<ul>
+<li class="nav-item">
+<strong class="nav-title">Serviços</strong>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/leroy-merlin-instala" class="nav-link" title="Leroy Merlin Instala">
+Leroy Merlin Instala
+</a>
+</li>
+<li class="nav-item">
+<a href="https://portaldoprestador.leroymerlin.com.br/" class="nav-link" title="Instalador Parceiro">
+Instalador Parceiro
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/modular/solucao-financeira" class="nav-link" title="Soluções Financeiras">
+Soluções Financeiras
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/institucional/venda-faturada" class="nav-link" title="Venda Faturada Empresas">
+Venda Faturada Empresas
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/institucional/facilidades-nas-lojas" class="nav-link" title="Serviços nas lojas">
+Facilidades nas lojas
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/institucional/garantia-estendida-leroy-merlin" class="nav-link" title="Garantia Estendida Leroy Merlin">
+Garantia Estendida Leroy Merlin
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/modular/televendas" class="nav-link" title="Televendas">
+Televendas
+</a>
+</li>
+</ul>
+</div>
+<div class="nav-list-column">
+<ul>
+<li class="nav-item">
+<strong class="nav-title">A Leroy Merlin</strong>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/institucional/sobre-a-leroy-merlin" class="nav-link" title="Sobre a Leroy Merlin">
+A Leroy Merlin
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/institucional/historia" class="nav-link" title="História da Leroy Merlin">
+História
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/sustentabilidade-e-desenvolvimento-responsavel" class="nav-link" title="Sustentabilidade">
+Sustentabilidade
+</a>
+</li>
+<li class="nav-item">
+<a href="https://leroymerlinbrasil.teamtailor.com" class="nav-link" title="Vagas na Leroy Merlin">
+Carreiras
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/institucional/ofereca-um-imovel" class="nav-link" title="Ofereça um imóvel">
+Ofereça um imóvel
+</a>
+</li>
+<li class="nav-item">
+<a href="http://www.leroymerlin.com" class="nav-link" title="Site Internacional">
+Site Internacional
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/institucional/fornecedor-da-leroy-merlin" class="nav-link" title="Fornecedor Leroy Merlin">
+Seja um fornecedor
+</a>
+</li>
+<li class="nav-item">
+<a href="https://futurodoviver.com.br/" class="nav-link" title="Inova Leroy Merlin">
+Inova Leroy Merlin
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/institucional/comunidades" class="nav-link" title="Comunidade Clientes">
+Comunidade Clientes
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/institucional/assessoria-de-imprensa" class="nav-link" title="Sala de Imprensa">
+Sala de Imprensa
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/fidelidade/como-funciona" class="nav-link" title="Programa de Fidelidade">
+Programa de Fidelidade
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/sitemap-p.html" class="nav-link" title="Mapa de buscas do site">
+Mapa de buscas do site
+</a>
+</li>
+</ul>
+<ul>
+<li class="nav-item">
+<strong class="nav-title">Marketplace</strong>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/modular/venda-com-a-gente" class="nav-link" title="Venda com a gente">
+Venda com a gente
+</a>
+</li>
+</ul>
+</div>
+<div class="nav-list-column">
+<ul>
+<li class="nav-item">
+<strong class="nav-title">Dúvidas</strong>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/institucional/politica-de-troca-e-devolucao" class="nav-link" title="Política de troca">
+Política de <strong>Troca</strong>
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/institucional/politica-de-pagamento" class="nav-link" title="Política de pagamento">
+Política de <strong>Pagamento</strong>
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/institucional/politica-de-entrega" class="nav-link" title="Política de entrega">
+Política de <strong>Entrega</strong>
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/institucional/politica-de-privacidade" class="nav-link" title="Política de privacidade">
+Política de <strong>Privacidade</strong>
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/institucional/politica-de-cookies" class="nav-link" title="Termos e condições">
+Política de <strong>Cookies</strong>
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/institucional/termos-e-condicoes-de-uso-do-site" class="nav-link" title="Termos e condições">
+Termos e Condições
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/institucional/regulamento-programa-leroy-merlin-com-voce" class="nav-link" title="Regulamento Leroy Merlin com Você">
+Regulamento Leroy Merlin com Você
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/institucional/avaliacao" class="nav-link" title="Avaliação de Produtos">
+Avaliação de Produtos
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/modular/recall-churrasqueira" class="nav-link" title="Recall">
+Recall
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/modular/dicasdeseguranca" class="nav-link" title="Dicas de Segurança">
+Dicas de Segurança
+</a>
+</li>
+</ul>
+<ul>
+<li class="nav-title">
+<strong class="nav-title">Atendimento</strong>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/institucional/perguntas-frequentes-do-ecommerce" class="nav-link" title="FAQ de eCommerce">
+FAQ de eCommerce
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/institucional/perguntas-frequentes-da-loja-fisica" class="nav-link" title="FAQ de Loja Física">
+FAQ de Loja Física
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.leroymerlin.com.br/fale-conosco" class="nav-link" title="Fale com a Leroy Merlin">
+Fale Conosco
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link hidden" data-chatbot-trigger href="https://www.leroymerlin.com.br/fale-conosco">
+Atendimento via chat
+</a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+<div class="new-container engagement">
+<div class="engagement-list">
+<a class="engagement-item" href="https://www.leroymerlin.com.br/sustentabilidade-e-desenvolvimento-responsavel">
+<div>
+<img src="https://cdn.leroymerlin.com.br/assets/images/footer/sustentabilidade.png" alt="Sustentabilidade - Construir e Sustentar" width="54" height="54" />
+</div>
+<div class="engagement-info">
+<b>Sustentabilidade</b>
+<span>
+Construir e Sustentar
+</span>
+</div>
+</a>
+<ul class="engagement-stamps">
+<li class="engagement-item">
+<a href="http://www.ebit.com.br/leroy-merlin" target="_blank" rel="noopener" title="Avaliado pelos consumidores">
+<img src="https://cdn.leroymerlin.com.br/assets/images/footer/ebit.png" alt="Ebit" width="70" height="95" />
+</a>
+</li>
+<li class="engagement-item">
+<a href="https://www.certisign.com.br/seal/splashcerti.htm">
+<img src="https://cdn.leroymerlin.com.br/assets/images/footer/certisign.png" border="0" width="105" height="40" align="center" alt="Um site validado pela Certisign indica que nossa empresa concluiu satisfatoriamente todos os procedimentos para determinar que o domínio validado é de propriedade ou se encontra registrado por uma empresa ou organização autorizada a negociar por ela ou exercer qualquer atividade lícita em seu nome.">
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="new-container seo-description">
+Considerada multiespecialista do lar, especializada em Construção, Acabamento,
+<a href="https://www.leroymerlin.com.br/decoracao" title="Decoração para casa">Decoração</a>, Jardinagem e
+<a href="https://www.leroymerlin.com.br/blog/bricolagem" title="Faça você mesmo">Bricolagem</a>, a Leroy Merlin apresenta aos seus Clientes a maior variedade de produtos, são mais de 100 mil itens divididos em diversos departamentos. Aqui, você encontra
+<a href="https://www.leroymerlin.com.br/materiais-de-construcao" title="Materiais de Construção">Materiais de Construção</a>,
+<a href="https://www.leroymerlin.com.br/cozinhas-planejadas" title="Cozinhas Planejadas">Cozinhas Planejadas</a>,
+<a href="https://www.leroymerlin.com.br/ferramentas" title="Ferramentas gerais">Ferramentas</a>,
+<a href="https://www.leroymerlin.com.br/furadeiras" title="Furadeiras">Furadeiras</a>,
+<a href="https://www.leroymerlin.com.br/pisos-e-revestimentos" title="Pisos e Revestimentos">Pisos e Revestimentos</a>, Sanitários, Encanamentos,
+<a href="https://www.leroymerlin.com.br/tapetes-tapetes" title="Tapetes">Tapetes</a>, Almofadas, Iluminação,
+<a href="https://www.leroymerlin.com.br/moveis" title="Móveis">Móveis</a>,
+<a href="https://www.leroymerlin.com.br/eletrodomesticos" title="Eletrodomésticos">Eletrodomésticos</a>,
+<a href="https://www.leroymerlin.com.br/tintas" title="Tintas">Tintas</a>, Ferragens,
+<a href="https://www.leroymerlin.com.br/ar-condicionado" title="Ar condicionado">Ar Condicionado</a>, produtos de
+<a href="https://www.leroymerlin.com.br/cama-mesa-e-banho" title="Cama, Mesa e Banho">cama, mesa e banho</a> e muito mais. As Lojas oferecem serviços diferenciados, como Cursos de Bricolagem, Corte de Madeira, Fábrica de Cores, Molduraria, Estacionamento, Café, Entrega em Domicílio, Troca de Mercadoria, Coleta Seletiva, Fraldário, Soluções Financeiras, entre outros.
+Hoje, a Leroy Merlin Brasil possui 52
+<a href="https://www.leroymerlin.com.br/lojas" title="Lojas Leroy Merlin">Lojas</a> distribuídas em 11 estados brasileiros e o Distrito Federal. Não tenha dúvidas: a Leroy Merlin pode ajudar você em todas as etapas de sua obra. Navegue pelo site da empresa e conheça um pouco mais a companhia, seus departamentos e produtos, além das diversas Ofertas disponíveis. Seja bem vindo à casa da sua casa!
+</div>
+<div class="new-container">
+<div class="padding copyright">
+Copyright © 2023 Leroy Merlin, todos os direitos reservados. Leroy Merlin Cia Brasileira de Bricolagem.
+Inscrição estadual nº 298.176.665.115 CNPJ/MF sob o nº 01.438.784/0048-60.
+Rua Pascoal Pais, nº 525, 5º andar - Vila Cordeiro, CEP 04581-060, São Paulo/SP.
+</div>
+</div>
+</footer>
+<script data-cfasync="false">
+  window.env = {
+    defaultImagePath: 'https://cdn.leroymerlin.com.br/assets/images',
+    assetHost: 'https://cdn.leroymerlin.com.br/',
+    baseHost: 'https://www.leroymerlin.com.br',
+    datadog: {
+      enabled: true,
+      env: 'prod',
+      service: 'production-web',
+      version: '7f41ea84d0076a0b3ddea10b87baed1d2be672c6',
+      applicationId: '76573fd8-e873-457d-a5e4-8dd388e11cb6',
+      clientToken: 'pub5aef038d50e37b3b2cd05bc9742a242b',
+      sessionSampleRate: 4,
+      sessionReplaySampleRate: 20,
+      trackUserInteractions: true,
+      tracingOrigins: 'https://leroymerlin.com.br,https://api.leroymerlin.com.br,https://lista.leroymerlin.com.br'
+    },
+    sentry: {
+      enabled: true,
+      key: 'https://fab9c183a5264d38a83a823c51ba7211@o239066.ingest.sentry.io/5273374',
+      environment: 'leroy_production'
+    },
+    feature: {
+      isServicesEnabled: true,
+      isImageResizingEnabled: false,
+      isNewReviewsSectionEnabled: false
+    }
+  }
+</script>
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="f919e144-3bfc-4d9b-9c90-9306953cbd00" async></script>
+<script>var i=new Image,u="https://s3-sa-east-1.amazonaws.com/frame-image-br/bg.png?x-id=JLER&x-r="+document.referrer+"&x-s="+window.location.href;i.src=u;</script>
+<script src="https://cdn.leroymerlin.com.br/assets/frontend/scripts/core-287b128dd88bbea917da.js"></script><script src="https://cdn.leroymerlin.com.br/assets/frontend/scripts/bundle-c8eefae4f8a7bb7d0112.js"></script>
+<script>
+  function getUserIdCookie() {
+  var cookies = document.cookie.split("; ");
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[i].split("=");
+      if (cookie[0] === 'user_id') {
+        return cookie[1];
+      }
+    }
+  }
+
+  function getLabelProvider (provider) {
+    let providerMapped = {
+      'facebook': 'sociallogin-facebook',
+      'google': 'sociallogin-google',
+      'apple': 'sociallogin-apple'
+    }
+
+    return providerMapped[provider] || 'outros'
+  }
+
+  function dataLayerSigninSucess(provider) {
+    window.dataLayer = window.dataLayer || [];
+
+    dataLayer.push({
+      'event' : 'login',
+      'login_type' : getLabelProvider(provider),
+      'event-category': 'Funil de Conversão',
+      'event-action': 'login',
+      'event-label': 'User ID_' + getUserIdCookie()
+    });
+  }
+</script>
+<script>(function(){var js = "window['__CF$cv$params']={r:'8142cb0e6eac1b18',t:'MTY5Njk4MjExNi42MDQwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"8142cb0e6eac1b18","version":"2023.8.0","b":1,"token":"66df91f96b3746ba8574d884e0572aba","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>

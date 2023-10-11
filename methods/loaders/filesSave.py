@@ -1,7 +1,4 @@
 import fastavro
-#import datetime
-import os
-#import time
 import pandas as pd
 import utils.logger_config as logger_config
 from utils.tools import GeneralTools
@@ -51,7 +48,6 @@ class FileSavers:
             self.df =  pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Avaliacao','Preco_Original', 'Produto'])], ignore_index=True)
         else:
             self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Preco_Original', 'Desmembrar', 'Produto'])], ignore_index=True)
-        #!= 'ar-condicionado' analisar sobre ar-condicionado
     
     def saveValuesSizeSix(self, data: list, product: str):
         if len(data) != 6:
@@ -60,7 +56,6 @@ class FileSavers:
         if "(" in data[2]:
             self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Desmembrar', 'Produto'])], ignore_index=True) 
         elif 'OFERTA' in data[0]:
-            #['OFERTA', '-18%', 'Campainha Sem Fio Co... Intelbras', 'Cód. 91787101', 'R$ 96,90 ', 'eletroportateis-campainhas']
             self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Produto'])], ignore_index=True)
         elif 'à' in data[0] or 's/juro' in data[0]:
             if 'EXCLUSIVO' in data[1]:
@@ -73,7 +68,6 @@ class FileSavers:
                     self.resume.get(len(item), lambda item, product: None)(data, product)
                     return
         elif 'NOVIDADE' in data[0]:
-            # COLOCAR UM 'EXCLUSIVO SITE' in data[0]
             self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Produto'])], ignore_index=True)
         else:
             print()
@@ -81,7 +75,6 @@ class FileSavers:
     def saveValuesSizeSeven(self, data: list, product: str):
         data = transformData.cleaningEmptySpace("\n".join(data).split("EXCLUSIVO SITE")[-1].split("\n"), product)
         data = transformData.cleaningDataRepeated(data)
-        #self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Produto', 'Desconsiderar'])], ignore_index=True)
         if len(data) != 7:
             self.resume.get(len(data), lambda data, product: None)(data, product)
             return 
@@ -115,8 +108,6 @@ class FileSavers:
         if len(data) != 9:
             self.resume.get(len(data), lambda data, product: None)(data, product)
             return
-        #if 'OFERTA' in data[0] or '' in data[0]:
-        #    self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', #'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Preco_A_Vista', #'Desconsiderar', 'Desmembrar', 'Produto'])], ignore_index=True)
         if '$' in data[4]:
             self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Preco_Original', 'Preco_A_Vista', 'Desconsiderar', 'Desmembrar', 'Produto'])], ignore_index=True)
         elif "(" in data[4]:
@@ -128,7 +119,7 @@ class FileSavers:
         if len(data) != 10:
             self.resume.get(len(data), lambda data, product: None)(data, product)
             return
-        #self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Preco_A_Vista', 'Parcela', 'Desmembrar', 'Produto'])], ignore_index=True)
+        
         if 'Cód.' in data[3]:
             self.df = pd.concat([self.df, pd.DataFrame([data], columns=['Situacao', 'Var_Desconto', 'Descricao', 'Codigo', 'Avaliacao', 'Preco_Original', 'Preco_A_Vista', 'Desconsiderar','Desmembrar', 'Produto'])], ignore_index=True)
         else:
@@ -136,9 +127,6 @@ class FileSavers:
             for item in data[:-1]:
                 item = item.split("\n")
                 item = transformData.cleaningEmptySpace(item, product) if len(item) != 1 else item
-                #if 's/juro' in item[0]:
-                    #item = item.split("")
-                    #self.resume.get(len(item), lambda item, product: None)(item, product)
                 if len(item) != 10 or 's/juro' in item[0]:
                     self.resume.get(len(item), lambda item, product: None)(item, product)
             return
