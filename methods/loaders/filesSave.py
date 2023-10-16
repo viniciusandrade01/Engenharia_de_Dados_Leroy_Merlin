@@ -303,5 +303,5 @@ class FileSavers:
 
         grupo['Faixa_de_Preco_Mid'] = grupo['Faixa_de_Preco'].apply(lambda x: x.mid)
 
-        # Plotando o gráfico
+        # Plotando o gráfico (experimento)
         generalCharts.createChart([12, 8], piores_produtos, grupo)

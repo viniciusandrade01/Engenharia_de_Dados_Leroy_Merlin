@@ -29,4 +29,4 @@ class GeneralCharts:
         plt.xticks(grupo['Faixa_de_Preco_Mid'], rotulos_faixas)
 
         plt.savefig(f"Produtos_{generalTools.hyphenToNull(generalTools.splitByEmptySpace(self.data)[0])}/Piores_Produtos_{generalTools.hyphenToNull(generalTools.splitByEmptySpace(self.data)[0])}.png")
-        plt.show()
+        plt.show() 

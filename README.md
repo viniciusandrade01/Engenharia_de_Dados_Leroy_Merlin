@@ -38,6 +38,9 @@ Fonte: Leroy Merlin (Aba 'sobre')
 # 6) Criei DynamoDB (NoSQL):
 - Fiz uso do DynamoDB (Banco Não Relacional da AWS) para guardar os dados tratados, coletados oriundos do website da varejista, justamente pela facilidade de armazenamento e escalabilidade. Por ser um recurso AWS, também, fiz uso do Boto3, que é um SDK para Python.
 
+# 7) Fazendo análise 'simples' e plotando gráfico
+- **EXTRA**
+- Como tópico extra e para aprender sobre o mundo dos gráficos e de análise de dados, fiz uma breve análise dos dados obtidos, visando identificar os piores produtos por faixa de preço e departamento. Como é a primeira vez, não ficou aquela 'QUALIDADE', entretanto, pude entender o funcionamento das métricas, métodos e o jeito de plotar o gráfico, que é uma ferramenta bastante utilizada no mundo das análises.
 ---------------------------------------------------------------------------------------------
 # OBSERVAÇÕES:
 - Passo 1: conforme mencionado, há arquivos ausentes nesse repositório - exemplo do data.json, justamente para manter integridade dos dados pessoais. Dessa forma, para obtenção do resultado esperado, criei um arquivo base (de nome data_exemplo.json, dentro da pasta utils), para vocês terem uma noção da estrutura que foi necessária para obtenção do resultado esperado. Além dele, tem o arquivo do chromedriver, que é criado a partir da compilação/rodagem do código.
@@ -47,6 +50,8 @@ Fonte: Leroy Merlin (Aba 'sobre')
 - Passo 4: foi realizado via código mesmo, onde peguei a versão desejada, a partir de uma vistoria sobre o versionamento do meu navegador. Com a versão em mãos (ou armazenada, rs) baixo ele automaticamente e atualizo o meu chromedriver (chrome pois é o navegador que decidi utilizar) sempre que necessário. Em referências, no fim desse documento, há um conteúdo para ajudá-lo em sua codificação
 
 - Passo 5 e 6: foram realizados manualmente, via console AWS, entretanto, é possível utilizar o boto3 para criação do Bucket/Dynamo via código, a partir da informação dos dados pertinentes ao Usuário e permissões necessárias para criação, inserções e manipulações devida. Quanto às permissões, fiz uso do recurso IAM, criando dois grupos (S3 e Dynamo) com permissões de acesso e inserção ao S3 e Dynamo. Visando melhor organização e tratamento, criei um usuário e o inseri dentro desses dois grupos. Dessa forma, depois dessas criações, consegui usar as chaves AWS para acessar/inserir os objetos/dados em serviços respectivos.
+
+- Passo 7: Como é a primeira vez, tanto na análise quanto na 'plotagem' dos gráficos, acabei 'penando' um pouco sobre, mas foi importante para entender o funcionamento e, com certeza, nos próximos projetos colocarei uma qualidade.
 
 ------------------------------------------------------------------------------------------------
 # REFERÊNCIAS:
@@ -61,4 +66,4 @@ Fonte: Leroy Merlin (Aba 'sobre')
 - https://felipepimentelrosa.medium.com/usando-selenium-em-um-projeto-de-rpa-em-python-990ea496609a
 
 ------------------------------------------------------------------------------------------------
-Obrigado pela interação, fico à disposição e disponível para receber dicas. Bons estudos e fica na paz!
+Obrigado pela interação, fico à disposição e disponível para receber dicas ou sanar dúvidas/cuirosidades. Bons estudos e fica na paz!
