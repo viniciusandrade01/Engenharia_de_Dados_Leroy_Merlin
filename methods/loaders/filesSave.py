@@ -156,7 +156,7 @@ class FileSavers:
         aux_df = pd.DataFrame() # ARQUIVO QUE MANIPULAREI
         novo_df = pd.DataFrame() # O FINAL
         alt_df = pd.DataFrame() # VOU ARMAZENAR AS COLUNAS QUE PRECISAM SER AJUSTADAS
-        #self.df = pd.read_csv("30k.csv", sep='\t') # ARQUIVO BASE, A SEGURANÇA
+        self.df = pd.read_csv("30k.csv", sep='\t') # ARQUIVO BASE, A SEGURANÇA
         self.df.fillna("", inplace=True)
         aux_df = self.df
         # AJUSTANDO DOCUMENTO BASE
@@ -285,3 +285,23 @@ class FileSavers:
             logging.error(f"ERRO: {e}, A CHAVE {e} NÃO FOI ENCONTRADA NO DICIONÁRIO.")
         except Exception as e:
             logging.error(f"ERRO: {e}, NÃO FOI POSSÍVEL CONCATENAR OS DATAFRAMES.")
+
+    def identifyTheWorstProducts(self, df: pd.DataFrame, num_faixas: int):
+        df = df[df['Avaliacao'].map(lambda x: 0 if x == '' else int(x)) > 0]
+        df.reset_index(inplace=True)
+        df.drop('index', axis=1, inplace=True)
+        df['Metrica_Ruim'] = 1 / df['Avaliacao'].astype(int)
+
+        # Divide os dados da coluna Preco Original em faixas (bins)
+        df['Faixa_de_Preco'] = pd.cut(df['Preco_Original'].map(lambda x: float(x)), bins=num_faixas)
+
+        # Agrupando os dados por produto e faixa de preço, e encontra a média da métrica ruim 
+        grupo = df.groupby(['Produto', 'Faixa_de_Preco'])['Metrica_Ruim'].mean().reset_index()
+
+        # Encontra os piores produtos por produto e faixa de preço
+        piores_produtos = grupo.groupby('Produto').apply(lambda x: x.nsmallest(1, 'Metrica_Ruim')).reset_index(drop=True)
+
+        grupo['Faixa_de_Preco_Mid'] = grupo['Faixa_de_Preco'].apply(lambda x: x.mid)
+
+        # Plotando o gráfico
+        generalCharts.createChart([12, 8], piores_produtos, grupo)
